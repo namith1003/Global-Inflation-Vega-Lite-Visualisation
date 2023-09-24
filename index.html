@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average Inflation 1970 - 2022</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        #map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        const spec = {
+                      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                      "title": "Global Average Inflation For All Countries from 1970 to 2022",
+                      "width": 1000,
+                      "height": 600,
+                      "projection": {"type": "equalEarth"},
+                      "layer": [
+                        {
+                          "data": {
+                            "values": [{}]
+                          },
+                          "mark": {"type": "rect", "color": "lightblue"}
+                        },
+                        {
+                          "data": {
+                            "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/ne_110m.json",
+                            "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+                          },
+                          "transform": [
+                            {
+                              "lookup": "properties.ISO_A3_EH",
+                              "from": {
+                                "data": {
+                                  "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/global_inflation_test.csv"
+                                },
+                                "key": "Country_Code",
+                                "fields": ["Average", "Series_Name"]
+                              }
+                            },
+                            {
+                              "calculate": "datum.Average",
+                              "as": "AverageInflation"
+                            }
+                          ],
+                          "layer": [
+                            {
+                              "data": {
+                                "graticule": {
+                                  "step": [30, 30]
+                                }
+                              },
+                              "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5}
+                            },
+                            {
+                              "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+                              "encoding": {
+                                "color": {
+                                  "field": "AverageInflation",
+                                  "type": "quantitative",
+                                  "scale": {"scheme": "oranges", "type": "log"},
+                                  "title": "Average Inflation %"
+                                },
+                                "tooltip": [
+                                  {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+                                  {"field": "AverageInflation", "type": "quantitative", "title": "Average Inflation"}
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    };
+
+        vegaEmbed('#map', spec);
+    </script>
+</body>
+</html>
