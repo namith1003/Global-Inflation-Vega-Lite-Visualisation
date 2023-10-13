@@ -150,8 +150,10 @@
     var specVis11 = "./JS/stackedBarAge.json";
     var specVis12 = "./JS/StackedAgeBrush.json";*/
 
-    vegaEmbed("#vis1", specVis1);
-    vegaEmbed('#vis2', specVis2);
+    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+    }).catch(console.error);
     
     
     /*
@@ -219,25 +221,19 @@
       })
     }).catch(console.error);
 
+    */
+
     vegaEmbed("#vis10", specVis10,{ "actions": false }).then((result) => {
       const view = result.view;
 
       // Add event listener for the slider
       const slider = document.getElementById("year-slider2");
       const sliderValue = document.getElementById("slider-value2");
-      const zoomSlider = document.getElementById("zoom-slider");
-      const zoomValue = document.getElementById("slider-value3");
       const continent = document.getElementById("continent-select");
       slider.addEventListener("input", function () {
         const yearSelection = +this.value;
         sliderValue.textContent = yearSelection;
         view.signal("Year_selection", yearSelection).runAsync();
-      });
-      zoomSlider.addEventListener("input", function () {
-        const zoomLevel = +this.value;
-        zoomValue.textContent = (zoomLevel-200)/500 * 100;
-        // Update the "Zoom_selection" parameter in the Vega-Lite specification
-        view.signal("zoom_level", zoomLevel).runAsync();
       });
       continent.addEventListener("input", function () {
         const selectedCenter = JSON.parse(this.value);
@@ -245,6 +241,8 @@
 
       })
     }).catch(console.error);
+
+    /*
 
     vegaEmbed("#vis12", specVis12,{ "actions": false }).then((result) => {
       const view = result.view;
