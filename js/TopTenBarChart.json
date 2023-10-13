@@ -13,11 +13,7 @@
     },
     {
       "name": "Series_Name",
-      "value": "Headline Consumer Price Inflation",
-      "bind": {
-        "input": "select",
-        "name": "Select series: "
-      }
+      "value": "Headline Consumer Price Inflation"
     }
   ],
   "transform": [
