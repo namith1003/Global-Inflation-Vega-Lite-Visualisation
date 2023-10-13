@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivoted_data.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Official Core Consumer Price Inflation", "type": "quantitative", "title": "Official Core Consumer Price Inflation"},
+    "y": {"field": "Headline Consumer Price Inflation", "type": "quantitative", "title": "Headline Consumer Price Inflation"},
+    "color": {"value": "orange"},
+    "tooltip": [
+      {"field": "Country", "title": "Country"},
+      {"field": "Year", "title": "Year"},
+      {"field": "Official Core Consumer Price Inflation", "title": "Official Core Consumer Price Inflation"},
+      {"field": "Headline Consumer Price Inflation", "title": "Headline Consumer Price Inflation"}
+    ]
+  }
+}
