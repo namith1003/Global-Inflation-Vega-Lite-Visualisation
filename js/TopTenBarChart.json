@@ -13,7 +13,11 @@
     },
     {
       "name": "Series_Name",
-      "value": "Headline Consumer Price Inflation"
+      "value": "Headline Consumer Price Inflation",
+      "bind": {
+        "input": "select",
+        "name": "Select series: "
+      }
     }
   ],
   "transform": [
@@ -45,31 +49,37 @@
   ],
   "layer": [
     {
-      "mark": {"type": "bar", "color": "#cc461b"},
+      "mark": {
+        "type": "rule",
+        "color": "maroon",
+        "size": 1,
+        "style": "dotted"
+      },
       "encoding": {
-        "x": {"field": "Country", "type": "nominal"},
-        "y": {"field": "value", "type": "quantitative", "title": "Inflation value"},
-        "tooltip": [
-          {"field": "Country", "type": "nominal"},
-          {"field": "value", "type": "quantitative"},
-          {"field": "Series_Name", "type": "nominal", "title": "Inflation Type"} 
-        ]
+        "x": { "field": "value", "type": "quantitative", "title": "Inflation value"},
+        "y": { "field": "Country", "type": "nominal" }
       }
     },
     {
       "mark": {
         "type": "image",
-        "width": 50, 
-        "height": 40, 
-        "clip": true
+        "width": 40, 
+        "height": 30, 
+        "clip": true, 
+        "shape": "round"
       },
       "encoding": {
-        "x": { "field": "Country", "type": "nominal" },
-        "y": { "field": "value", "type": "quantitative", "title": "Inflation value"},
+        "x": { "field": "value", "type": "quantitative", "title": "Inflation value"},
+        "y": { "field": "Country", "type": "nominal" },
         "url": {
           "field": "Flag_Image",
           "type": "nominal"
-        }
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "value", "type": "quantitative", "title": "Inflation Value"},
+          {"field": "Series_Name", "type": "nominal", "title": "Inflation Type"} 
+        ]
       }
     },
     {
@@ -80,7 +90,7 @@
         "style": "dotted"
       },
       "encoding": {
-        "y": {"field": "value", "type": "quantitative"},
+        "x": { "field": "value", "type": "quantitative", "title": "Inflation value"},
         "opacity": {
           "condition": {"test": "datum.value > 100", "value": 1},
           "value": 0
@@ -96,7 +106,7 @@
         "color": "red"
       },
       "encoding": {
-        "y": {"field": "value", "type": "quantitative"},
+        "y": { "field": "Country", "type": "nominal" },
         "text": {"value": "Inflation exceeds 100"},
         "opacity": {
           "condition": {"test": "datum.value > 100", "value": 1},
@@ -106,3 +116,8 @@
     }
   ]
 }
+
+
+
+
+
