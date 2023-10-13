@@ -57,7 +57,7 @@ body * {
 
 hr {
     height: 2px;
-    background-color: #e64e1f ;
+    background-color: #802c11 ;
     border: none;
 }
 
@@ -66,14 +66,14 @@ h1 {
     text-align: center;
     font-size: 50px;
     font-weight: 1000;
-    color: #e64e1f
+    color: #802c11
     
 }
 
 h2 {
     font-family: playfair;
     font-size: 40px;
-    color: #e64e1f
+    color: #802c11
 }
 
 h3 {
@@ -185,7 +185,7 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #e64e1f;
+    background: #802c11;
     cursor: pointer;
 }
 
@@ -193,7 +193,7 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #e64e1f;
+    background: #802c11;
     cursor: pointer;
 }
 
@@ -220,7 +220,7 @@ h1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e64e1f;
+    background: #802c11;
     cursor: pointer;
 }
 
@@ -228,7 +228,7 @@ h1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e64e1f;
+    background: #802c11;
     cursor: pointer;
 }
 
@@ -255,7 +255,7 @@ h1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e64e1f;
+    background: #802c11;
     cursor: pointer;
 }
 
@@ -263,7 +263,7 @@ h1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e64e1f;
+    background: #802c11;
     cursor: pointer;
 }
 
