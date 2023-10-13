@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+}
+   
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+#down {
+    margin-top: 100%;
+    padding-bottom: 25%;
+} 
+
+.box {
+    width: 90%;
+    height: auto;
+    border: 2px solid #474747;
+    border-radius: 15px;
+    background-color: #9CD08F;
+    border-width: 5cap;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin:auto
+}
+
+@font-face {
+    font-family: moon;
+    src: url("Fonts/Moon/MoonLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sulphur;
+    src: url("Fonts/sulphur-point/SulphurPoint-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lezerno;
+    src: url("Fonts/lezerno-demo/LezernoDEMO.otf");
+}
+
+@font-face {
+    font-family: playfair;
+    src: url("Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+body * {
+    font-family: sulphur;
+    font-size: 18px;
+}
+
+hr {
+    height: 2px;
+    background-color: #04724D ;
+    border: none;
+}
+
+h1 {
+    font-family: playfair;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    color: #04724D
+    
+}
+
+h2 {
+    font-family: playfair;
+    font-size: 40px;
+    color: #04724D
+}
+
+h3 {
+    font-family: sulphur;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+
+i {
+    font-size: 14px;
+}
+
+b {
+    font-size: inherit;
+}
+
+p {
+    text-align: justify;
+    padding: 15px;
+}
+
+body {
+    background-color: #9CD08F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div {
+    white-space: normal;
+}
+
+h5 {
+    font-family: sulphur;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.page {
+    width: 900px;
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    border-color: #474747;
+    margin: auto;
+    padding: 50px;
+    padding-top: 40px;
+}
+
+.vis-container {
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.vis-container-right {
+    width: 100%;
+    text-align: right;
+    line-height: 30px;
+}
+
+.description h2,
+h1 {
+    margin-top: 0px;
+}
+
+.description-right {
+    padding-left: 20px;
+}
+
+.description-left {
+    padding-right: 20px;
+}
+
+.pure-g {
+    margin-bottom: 10px;
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+#slider-container {
+    display: flex;
+    align-items: center; /* Vertically center the elements */
+}
+
+#year-slider {
+    width: 100%; /* Make the slider span the entire width of its container */
+    height: 2px; /* Set the height of the slider bar */
+    background-color: #ddd; /* Set the background color of the slider bar */
+    outline: none; /* Remove the default focus outline */
+    -webkit-appearance: none; /* Remove the default styling on WebKit browsers */
+    appearance: none;
+  }
+
+#slider-value {
+    margin-left: 10px; /* Add spacing between the slider and value */
+}
+
+#year-slider2:hover {
+    opacity: 1;
+}
+
+#year-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04724D;
+    cursor: pointer;
+}
+
+#year-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04724D;
+    cursor: pointer;
+}
+
+#year-slider2 {
+    width: 100%; /* Make the slider span the entire width of its container */
+    height: 2px; /* Set the height of the slider bar */
+    background-color: #ddd; /* Set the background color of the slider bar */
+    outline: none; /* Remove the default focus outline */
+    -webkit-appearance: none; /* Remove the default styling on WebKit browsers */
+    appearance: none;
+  }
+
+#slider-value2 {
+    margin-left: 10px; /* Add spacing between the slider and value */
+}
+
+#year-slider2:hover {
+    opacity: 1;
+}
+
+#year-slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #04724D;
+    cursor: pointer;
+}
+
+#year-slider2::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #04724D;
+    cursor: pointer;
+}
+
+#zoom-slider {
+    width: 100%; /* Make the slider span the entire width of its container */
+    height: 2px; /* Set the height of the slider bar */
+    background-color: #ddd; /* Set the background color of the slider bar */
+    outline: none; /* Remove the default focus outline */
+    -webkit-appearance: none; /* Remove the default styling on WebKit browsers */
+    appearance: none;
+  }
+
+#slider-value3 {
+    margin-left: 10px; /* Add spacing between the slider and value */
+}
+
+#zoom-slider:hover {
+    opacity: 1;
+}
+
+#zoom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #04724D;
+    cursor: pointer;
+}
+
+#zoom-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #04724D;
+    cursor: pointer;
+}
+
+#continent-select {
+    width: 300px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 100%;
+    text-align: left
+}
+
+#continent-select .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+#continent-select .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+#continent-select .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+
+#country-select {
+    width: 300px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 100%;
+    text-align: left
+}
+
+#country-select .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+#country-select .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+#country-select .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+
+#country-select2 {
+    width: 300px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 100%;
+    text-align: left
+}
+
+#country-select2 .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+#country-select2 .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+#country-select2 .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
