@@ -235,9 +235,8 @@
         view.signal("Year", yearSelection).runAsync();
       });
       continent.addEventListener("input", function () {
-        const selectedCenter = JSON.parse(this.value);
-        view.signal("Series_Name", selectedCenter).runAsync();
-
+        const selectedCountry = this.value;
+        view.signal("Series_Name", selectedCountry).runAsync();
       })
     }).catch(console.error);
 
