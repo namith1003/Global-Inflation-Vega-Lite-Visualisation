@@ -152,6 +152,7 @@
 
     vegaEmbed("#vis1", specVis1);
 
+    /*
     vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
@@ -190,6 +191,8 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
+    */
+
 
     vegaEmbed("#vis1", specVis1,{ "actions": false }).then((result) => {
       const view = result.view;
@@ -203,6 +206,8 @@
         view.signal("Year_selection", yearSelection).runAsync();
       });
     }).catch(console.error);
+
+    /*
 
     vegaEmbed("#vis4", specVis4,{ "actions": false }).then((result) => {
       const view = result.view;
@@ -252,6 +257,8 @@
 
       })
     }).catch(console.error);
+
+    */
       </script>
 </body>
 
