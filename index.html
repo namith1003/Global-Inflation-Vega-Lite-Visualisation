@@ -1,89 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Average Inflation 1970 - 2022</title>
+  <title>Worldwide Suicide Rates</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        #map {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-    </style>
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
 </head>
-<body>
-    <div id="map"></div>
-    <script>
-        const spec = {
-                      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-                      "title": "Global Average Inflation For All Countries from 1970 to 2022",
-                      "width": 1600,
-                      "height": 900,
-                      "projection": {"type": "equalEarth"},
-                      "layer": [
-                        {
-                          "data": {
-                            "values": [{}]
-                          },
-                          "mark": {"type": "rect", "color": "lightblue"}
-                        },
-                        {
-                          "data": {
-                            "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/ne_110m.json",
-                            "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-                          },
-                          "transform": [
-                            {
-                              "lookup": "properties.ISO_A3_EH",
-                              "from": {
-                                "data": {
-                                  "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/global_inflation_test.csv"
-                                },
-                                "key": "Country_Code",
-                                "fields": ["Average", "Series_Name"]
-                              }
-                            },
-                            {
-                              "calculate": "datum.Average",
-                              "as": "AverageInflation"
-                            }
-                          ],
-                          "layer": [
-                            {
-                              "data": {
-                                "graticule": {
-                                  "step": [30, 30]
-                                }
-                              },
-                              "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5}
-                            },
-                            {
-                              "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
-                              "encoding": {
-                                "color": {
-                                  "field": "AverageInflation",
-                                  "type": "quantitative",
-                                  "scale": {"scheme": "oranges", "type": "log"},
-                                  "title": "Average Inflation %"
-                                },
-                                "tooltip": [
-                                  {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-                                  {"field": "AverageInflation", "type": "quantitative", "title": "Average Inflation"}
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    };
 
-        vegaEmbed('#map', spec);
-    </script>
+<body id="top">
+
+  <div class="page" >
+
+    <!-- pure grid group -->
+        
+    <h1> Global Inflation, 1970-2023 </h1>
+    <p> A.A Namith Nimlaka 31073484 </p>
+    <hr>
+    <!-- end pure grid group -->
+        
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description-left">
+          <p>According to the <b>World Health Organisation</b>, more than <b>700,000 people die to suicide every year</b>, that is
+            equivalent to one death to suicide every 45 seconds. Suicide is the
+            fourth leading cause of death amongst individuals aged 15-29.
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">              
+        <div class="description-left">                  
+          <p>In this visualisation, we will look at how global suicide rates are affected by <b>geographical location, Gross Domestic Profit per
+            Capita (GDP), sex and age</b> to see if there is any
+            trends across the data. All suicide rates will be <b>normalised to per 100,000 population.</b>
+          </p>
+        </div>
+    </div>
+    </div>
+    <!-- pure grid group -->
+    
+
+    <div>
+      <div>
+        <div id="GeoLocate"class="description description-left">
+          <h2>Global Geographical Inflation</h2>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Global Inflation, 1970-2023</h3>
+        <div id="vis1" class="vis-container"></div>
+      </div>
+      <div id="slider-container">
+        <p><b>Year:</b></p>
+        <input type="range" id="year-slider" min="1970" max="2023" step="1" value="2023">
+        <span id="slider-value">2023</span>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+    
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <p>
+            <b>The map above</b> shows a global perspective of suicide rates per 100,000 for the years 2000 to 2019. From this map we can see that North-Eastern Europe as well as southern African countries tend 
+            to have consistently higher suicide rates. Australia, United States and the United Kingdom appear to fall in the average range and tend to have consistent rates throughout the years.
+            <b>The map to the right</b> shows a zoomed in perspective of each continent 
+          </p>
+          <p>
+            From both maps, it is <b>hard to make conclusive statements</b> about whether suicide rates are directly affected by geographical location, as <b>we cannot factor in all aspects of living</b>,
+            such as, common religions, quality of life and social stigma around mental illness. It is also important to note that certain countries have significantly less reported data on their 
+            yearly suicide numbers and therefore there may be higher rates in these areas due to unaccounted for deaths.
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description description-right">
+        <h3>Categorical Country Inflation, 1970-2023</h3>
+        <div id="vis10" class="vis-container"></div>
+        <div id="slider-container">
+          <p><b>Year:</b></p>
+          <input type="range" id="year-slider2" min="1970" max="2023" step="1" value="2023">
+          <span id="slider-value2">2023</span>
+        </div>
+
+        <div id="slider-container">
+          <label for="continent-select"><b>Continent:</b> </label><p></p>
+          <select id="continent-select">
+            <option value="[20, 10]">Africa</option>
+            <option value="[73, 30]">Asia</option>
+            <option value="[15, 50]">Europe</option>
+            <option value="[-100, 40]">North America</option>
+            <option value="[125, -15]" selected>Oceania</option>
+            <option value="[-60, -20]">South America</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div id="gdp">
+      <h2>Overall Inflation Factors</h2>
+      <hr>
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class="description description-left">
+            <h3>Mean GDP per Continent, 2019</h3>
+            <div id="vis9" class="vis-container"></div>
+          </div>
+        </div>
+        <div class="pure-u-1-2">
+          <div class="description-right">
+          <h3>Continental Suicide Rates, 1996-2020</h3>
+          <div id="vis2" class="vis-container"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+    
+  </div> <!-- end page -->
+
+
+  <script type="text/javascript">
+    var specVis1 = "./js/InflationMap.json";
+      
+    /*var specVis2 = "./JS/stream_rate_cont.json";
+    var specVis3 = "./JS/Scatterplot.json";
+    var specVis4 = "./JS/GenderRates.json";
+    var specVis5 = "./JS/AustraliaHeatMap.json";
+    var specVis6 = "./JS/franceHeatMap.json";
+    var specVis7 = "./JS/russiaHeatMap.json";
+    var specVis8 = "./JS/usHeatMap.json";
+    var specVis9 = "./JS/GDPbarChart.json";
+    var specVis10 = "./JS/continentalMap.json";
+    var specVis11 = "./JS/stackedBarAge.json";
+    var specVis12 = "./JS/StackedAgeBrush.json";*/
+
+    vegaEmbed("#vis1", specVis1);
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    //vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    //}).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis8', specVis8, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis9', specVis9, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    //vegaEmbed('#vis10', specVis10, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    //}).catch(console.error);
+
+    vegaEmbed('#vis11', specVis11, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+
+    vegaEmbed("#vis1", specVis1,{ "actions": false }).then((result) => {
+      const view = result.view;
+
+      // Add event listener for the slider
+      const slider = document.getElementById("year-slider");
+      const sliderValue = document.getElementById("slider-value");
+      slider.addEventListener("input", function () {
+        const yearSelection = +this.value;
+        sliderValue.textContent = yearSelection;
+        view.signal("Year_selection", yearSelection).runAsync();
+      });
+    }).catch(console.error);
+
+    vegaEmbed("#vis4", specVis4,{ "actions": false }).then((result) => {
+      const view = result.view;
+      // Add event listener for the slider
+      const country = document.getElementById("country-select");
+      country.addEventListener("input", function () {
+        const selectedCountry = this.value;
+        view.signal("country_selection", selectedCountry).runAsync();
+
+      })
+    }).catch(console.error);
+
+    vegaEmbed("#vis10", specVis10,{ "actions": false }).then((result) => {
+      const view = result.view;
+
+      // Add event listener for the slider
+      const slider = document.getElementById("year-slider2");
+      const sliderValue = document.getElementById("slider-value2");
+      const zoomSlider = document.getElementById("zoom-slider");
+      const zoomValue = document.getElementById("slider-value3");
+      const continent = document.getElementById("continent-select");
+      slider.addEventListener("input", function () {
+        const yearSelection = +this.value;
+        sliderValue.textContent = yearSelection;
+        view.signal("Year_selection", yearSelection).runAsync();
+      });
+      zoomSlider.addEventListener("input", function () {
+        const zoomLevel = +this.value;
+        zoomValue.textContent = (zoomLevel-200)/500 * 100;
+        // Update the "Zoom_selection" parameter in the Vega-Lite specification
+        view.signal("zoom_level", zoomLevel).runAsync();
+      });
+      continent.addEventListener("input", function () {
+        const selectedCenter = JSON.parse(this.value);
+        view.signal("center_to", selectedCenter).runAsync();
+
+      })
+    }).catch(console.error);
+
+    vegaEmbed("#vis12", specVis12,{ "actions": false }).then((result) => {
+      const view = result.view;
+      // Add event listener for the slider
+      const country = document.getElementById("country-select2");
+      country.addEventListener("input", function () {
+        const selectedCountry = this.value;
+        view.signal("country_select", selectedCountry).runAsync();
+
+      })
+    }).catch(console.error);
+      </script>
 </body>
+
 </html>
