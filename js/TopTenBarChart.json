@@ -9,29 +9,11 @@
   "params": [
     {
       "name": "Year",
-      "value": 2013,
-      "bind": {
-        "input": "range",
-        "min": 1970,
-        "max": 2022,
-        "step": 1,
-        "name": "Select year: "
-      }
+      "value": 2013
     },
     {
       "name": "Series_Name",
-      "value": "Headline Consumer Price Inflation",
-      "bind": {
-        "input": "select",
-        "name": "Select series: ",
-        "options": [
-          "Headline Consumer Price Inflation",
-          "Energy Consumer Price Inflation",
-          "Food Consumer Price Inflation",
-          "Official Core Consumer Price Inflation",
-          "Producer Price Inflation"
-        ]
-      }
+      "value": "Headline Consumer Price Inflation"
     }
   ],
   "transform": [
