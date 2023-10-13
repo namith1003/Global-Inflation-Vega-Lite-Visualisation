@@ -97,14 +97,13 @@
         </div>
 
         <div id="slider-container">
-          <label for="continent-select"><b>Continent:</b> </label><p></p>
-          <select id="continent-select">
-            <option value="[20, 10]">Africa</option>
-            <option value="[73, 30]">Asia</option>
-            <option value="[15, 50]">Europe</option>
-            <option value="[-100, 40]">North America</option>
-            <option value="[125, -15]" selected>Oceania</option>
-            <option value="[-60, -20]">South America</option>
+          <label for="inflation-select"><b>Inflation Type:</b> </label><p></p>
+          <select id="inflation-select">
+            <option value="Headline Consumer Price Inflation">Overall Inflation</option>
+            <option value="Energy Consumer Price Inflation">Energy Inflation</option>
+            <option value="Food Consumer Price Inflation">Food Inflation</option>
+            <option value="Official Core Consumer Price Inflation">Consumer Inflation</option>
+            <option value="Producer Price Inflation" selected>Producer Inflation</option>
           </select>
         </div>
       </div>
@@ -223,21 +222,21 @@
 
     */
 
-    vegaEmbed("#vis10", specVis10,{ "actions": false }).then((result) => {
+    vegaEmbed("#vis2", specVis2,{ "actions": false }).then((result) => {
       const view = result.view;
 
       // Add event listener for the slider
       const slider = document.getElementById("year-slider2");
       const sliderValue = document.getElementById("slider-value2");
-      const continent = document.getElementById("continent-select");
+      const continent = document.getElementById("inflation-select");
       slider.addEventListener("input", function () {
         const yearSelection = +this.value;
         sliderValue.textContent = yearSelection;
-        view.signal("Year_selection", yearSelection).runAsync();
+        view.signal("Year", yearSelection).runAsync();
       });
       continent.addEventListener("input", function () {
         const selectedCenter = JSON.parse(this.value);
-        view.signal("center_to", selectedCenter).runAsync();
+        view.signal("Series_Name", selectedCenter).runAsync();
 
       })
     }).catch(console.error);
