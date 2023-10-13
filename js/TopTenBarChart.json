@@ -45,7 +45,7 @@
   ],
   "layer": [
     {
-      "mark": "bar",
+      "mark": {"type": "bar", "color": "#cc461b"},
       "encoding": {
         "x": {"field": "Country", "type": "nominal"},
         "y": {"field": "value", "type": "quantitative", "title": "Inflation value"},
