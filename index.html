@@ -118,13 +118,13 @@
         <div class="pure-u-1-2">
           <div class="description description-left">
             <h3>Mean GDP per Continent, 2019</h3>
-            <div id="vis9" class="vis-container"></div>
+            <div id="vis3" class="vis-container"></div>
           </div>
         </div>
         <div class="pure-u-1-2">
           <div class="description-right">
           <h3>Continental Suicide Rates, 1996-2020</h3>
-          <div id="vis2" class="vis-container"></div>
+          <div id="vis4" class="vis-container"></div>
         </div>
         </div>
       </div>
@@ -137,9 +137,10 @@
   <script type="text/javascript">
     var specVis1 = "./js/InflationMap.json";
     var specVis2 = "./js/TopTenBarChart.json";
+    var specVis3 = "./js/FoodOverallScatter.json";
+    var specVis4 = "./js/EnergyOverallScatter.json";
     
-    /*var specVis3 = "./JS/Scatterplot.json";
-    var specVis4 = "./JS/GenderRates.json";
+    /*
     var specVis5 = "./JS/AustraliaHeatMap.json";
     var specVis6 = "./JS/franceHeatMap.json";
     var specVis7 = "./JS/russiaHeatMap.json";
@@ -151,18 +152,18 @@
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
     }).catch(console.error);
+    
     vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
     }).catch(console.error);
     
-    
-    /*
     vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    //vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    //}).catch(console.error);
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+    }).catch(console.error);
 
+    
+    /*
     vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
