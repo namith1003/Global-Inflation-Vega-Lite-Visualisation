@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "title": "10 Countries With Highest Inflation For Each Year",
+  "data": {
+    "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/global_inflation.csv"
+  },
+  "params": [
+    {
+      "name": "Year",
+      "value": 2013,
+      "bind": {
+        "input": "range",
+        "min": 1970,
+        "max": 2022,
+        "step": 1,
+        "name": "Select year: "
+      }
+    },
+    {
+      "name": "Series_Name",
+      "value": "Headline Consumer Price Inflation",
+      "bind": {
+        "input": "select",
+        "name": "Select series: ",
+        "options": [
+          "Headline Consumer Price Inflation",
+          "Energy Consumer Price Inflation",
+          "Food Consumer Price Inflation",
+          "Official Core Consumer Price Inflation",
+          "Producer Price Inflation"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "fold": [
+        "Y_1970", "Y_1971", "Y_1972", "Y_1973", "Y_1974", "Y_1975", "Y_1976", "Y_1977", "Y_1978", "Y_1979",
+        "Y_1980", "Y_1981", "Y_1982", "Y_1983", "Y_1984", "Y_1985", "Y_1986", "Y_1987", "Y_1988", "Y_1989",
+        "Y_1990", "Y_1991", "Y_1992", "Y_1993", "Y_1994", "Y_1995", "Y_1996", "Y_1997", "Y_1998", "Y_1999",
+        "Y_2000", "Y_2001", "Y_2002", "Y_2003", "Y_2004", "Y_2005", "Y_2006", "Y_2007", "Y_2008", "Y_2009",
+        "Y_2010", "Y_2011", "Y_2012", "Y_2013", "Y_2014", "Y_2015", "Y_2016", "Y_2017", "Y_2018", "Y_2019",
+        "Y_2020", "Y_2021", "Y_2022"
+      ],
+      "as": ["year", "value"]
+    },
+    {
+      "filter": "datum.Series_Name === Series_Name && datum.year === 'Y_' + Year"
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "value", "order": "descending"}]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "value"}]
+    }
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "Country", "type": "nominal"},
+        "y": {"field": "value", "type": "quantitative", "title": "Inflation value"},
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "value", "type": "quantitative"},
+          {"field": "Series_Name", "type": "nominal", "title": "Inflation Type"} 
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "red",
+        "size": 1,
+        "style": "dotted"
+      },
+      "encoding": {
+        "y": {"field": "value", "type": "quantitative"},
+        "opacity": {
+          "condition": {"test": "datum.value > 100", "value": 1},
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -5,
+        "color": "red"
+      },
+      "encoding": {
+        "y": {"field": "value", "type": "quantitative"},
+        "text": {"value": "Inflation exceeds 100"},
+        "opacity": {
+          "condition": {"test": "datum.value > 100", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ]
+}
