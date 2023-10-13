@@ -58,6 +58,22 @@
     },
     {
       "mark": {
+        "type": "image",
+        "width": 50, 
+        "height": 40, 
+        "clip": true
+      },
+      "encoding": {
+        "x": { "field": "Country", "type": "nominal" },
+        "y": { "field": "value", "type": "quantitative", "title": "Inflation value"},
+        "url": {
+          "field": "Flag_Image",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
         "type": "rule",
         "color": "red",
         "size": 1,
