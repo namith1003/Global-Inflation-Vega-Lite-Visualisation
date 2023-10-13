@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="pure-u-1-2">              
-        <div class="description-left">                  
+        <div class="description-right">                  
           <p>In this visualisation, we will look at how global suicide rates are affected by <b>geographical location, Gross Domestic Profit per
             Capita (GDP), sex and age</b> to see if there is any
             trends across the data. All suicide rates will be <b>normalised to per 100,000 population.</b>
@@ -89,7 +89,7 @@
       <div class="pure-u-1-2">
         <div class="description description-right">
         <h3>Categorical Country Inflation, 1970-2023</h3>
-        <div id="vis10" class="vis-container"></div>
+        <div id="vis2" class="vis-container"></div>
         <div id="slider-container">
           <p><b>Year:</b></p>
           <input type="range" id="year-slider2" min="1970" max="2023" step="1" value="2023">
@@ -137,9 +137,9 @@
 
   <script type="text/javascript">
     var specVis1 = "./js/InflationMap.json";
-      
-    /*var specVis2 = "./JS/stream_rate_cont.json";
-    var specVis3 = "./JS/Scatterplot.json";
+    var specVis2 = "./js/TopTenBarChart.json";
+    
+    /*var specVis3 = "./JS/Scatterplot.json";
     var specVis4 = "./JS/GenderRates.json";
     var specVis5 = "./JS/AustraliaHeatMap.json";
     var specVis6 = "./JS/franceHeatMap.json";
@@ -151,11 +151,10 @@
     var specVis12 = "./JS/StackedAgeBrush.json";*/
 
     vegaEmbed("#vis1", specVis1);
-
+    vegaEmbed('#vis2', specVis2);
+    
+    
     /*
-    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
-    }).catch(console.error);
-
     vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
