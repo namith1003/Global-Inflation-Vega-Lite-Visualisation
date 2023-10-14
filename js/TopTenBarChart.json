@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 400,
-  "title": "10 Countries With Highest Inflation For Each Year",
   "data": {
     "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/global_inflation.csv"
   },
