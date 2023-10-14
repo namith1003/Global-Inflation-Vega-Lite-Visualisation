@@ -326,3 +326,31 @@ h1 {
     transition: all .2s ease-in-out;
     cursor: pointer
 } 
+
+/* For small screens (up to medium breakpoint) */
+@media (max-width: 768px) {
+  .pure-g {
+    flex-direction: column; /* Stack elements on top of each other for small screens */
+  }
+  .pure-u-1 {
+    width: 100%; /* Full width for both left and right sides on small screens */
+  }
+}
+
+/* For medium screens and above */
+@media (min-width: 769px) {
+  .pure-g {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pure-u-md-1-3 {
+    width: 30%; /* 30% width for the left side */
+  }
+  .pure-u-md-2-3 {
+    width: 70%; /* 70% width for the right side */
+  }
+}
+
+
+
+
