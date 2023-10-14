@@ -30,14 +30,14 @@ a {
     margin:auto
 }
 
-body * {
-    font-family: 'Montserrat';
-    font-size: 18px;
-}
-
 @font-face {
     font-family: almarai;
     src: url("fonts/almarai/Almarai-Regular.ttf") format("opentype");
+}
+
+body * {
+    font-family: almarai;
+    font-size: 18px;
 }
 
 hr {
