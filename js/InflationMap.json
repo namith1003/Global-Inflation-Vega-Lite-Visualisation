@@ -31,11 +31,6 @@
           "as": "AverageInflation"
         }
       ],
-      "config": {
-        "font": "almarai",
-        "background":"#FFEEB6",
-        "style": {"cell": {"stroke": "transparent"}}
-      },
       "layer": [
         {
           "data": {
@@ -70,5 +65,10 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "font": "almarai",
+    "background":"#FFEEB6",
+    "style": {"cell": {"stroke": "transparent"}}
+  }
 }
