@@ -80,6 +80,11 @@
       {"field": "Producer Price Inflation", "title": "Producer Price Inflation"},
       {"field": "Headline Consumer Price Inflation", "title": "Headline Consumer Price Inflation"}
     ]
+  },
+  "config": {
+    "font": "almarai",
+    "background":"#FFEEB6",
+    "style": {"cell": {"stroke": "transparent"}}
   }
 }
 
