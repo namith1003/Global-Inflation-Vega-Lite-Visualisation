@@ -47,13 +47,23 @@
     {
       "mark": {
         "type": "rule",
-        "color": "maroon",
         "size": 1,
         "style": "dotted"
       },
       "encoding": {
         "x": { "field": "value", "type": "quantitative", "title": "Inflation value"},
-        "y": { "field": "Country", "type": "nominal" }
+        "y": { "field": "Country", "type": "nominal" },
+        "color": {"field": "Continent", "type": "nominal",
+        "legend":{
+          "title": "Continents",
+          "orient": "bottom"
+        }
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "value", "type": "quantitative", "title": "Inflation Value"},
+          {"field": "Series_Name", "type": "nominal", "title": "Inflation Type"} 
+        ]
       }
     },
     {
@@ -110,7 +120,12 @@
         }
       }
     }
-  ]
+  ],
+  "config": {
+    "font": "Montserrat",
+    "background":"#FFEEB6",
+    "style": {"cell": {"stroke": "transparent"}}
+  }
 }
 
 
