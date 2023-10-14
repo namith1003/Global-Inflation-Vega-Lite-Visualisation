@@ -9,12 +9,73 @@
     }
   },
   "mark": "point",
+  "params": [
+    {
+      "name": "brush",
+      "select": {
+        "type": "interval",
+        "resolve": "union",
+        "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+        "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+        "zoom": "wheel![event.shiftKey]"
+      }
+    },
+    {
+      "name": "paintbrush",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    },
+    {
+      "name": "grid",
+      "select": {
+        "type": "interval",
+        "resolve": "global",
+        "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+        "zoom": "wheel![!event.shiftKey]"
+      },
+      "bind": "scales"
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum['Official Core Consumer Price Inflation'] > 0.0"
+    }
+  ],
   "encoding": {
     "x": {"field": "Official Core Consumer Price Inflation", "type": "quantitative", "title": "Official Core Consumer Price Inflation"},
     "y": {"field": "Headline Consumer Price Inflation", "type": "quantitative", "title": "Headline Consumer Price Inflation"},
-    "color": {"value": "orange"},
+    "color": {
+      "condition": {
+        "legend": null,
+        "field": "Continent",
+        "scale": {
+          "domain": [
+            "North America",
+            "South America",
+            "Europe",
+            "Asia",
+            "Africa",
+            "Oceania"
+          ],
+          "range": [
+            "#e45756",
+            "#4c78a8",
+            "#940be3",
+            "#f58518",
+            "#54a24b",
+            "#000000"
+          ]
+        },
+        "param": "paintbrush",
+        "type": "nominal"
+      },
+      "value": "#ff8a65"
+    },
     "tooltip": [
       {"field": "Country", "title": "Country"},
+      {"field": "Continent", "title": "Continent"},
       {"field": "Year", "title": "Year"},
       {"field": "Official Core Consumer Price Inflation", "title": "Official Core Consumer Price Inflation"},
       {"field": "Headline Consumer Price Inflation", "title": "Headline Consumer Price Inflation"}
