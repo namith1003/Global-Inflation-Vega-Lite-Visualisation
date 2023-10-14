@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Average Inflation For All Countries from 1970 to 2022",
   "width": 1300,
   "height": 800,
   "projection": {"type": "equalEarth"},
@@ -32,6 +31,11 @@
           "as": "AverageInflation"
         }
       ],
+      "config": {
+        "font": "almarai",
+        "background":"#FFEEB6",
+        "style": {"cell": {"stroke": "transparent"}}
+      },
       "layer": [
         {
           "data": {
