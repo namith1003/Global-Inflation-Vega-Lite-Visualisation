@@ -125,8 +125,8 @@
     }
   ],
   "config": {
-    "font": "Montserrat",
-    "background":"#FFEEB6",
+    "font": "almarai",
+    "background":"#FDB475",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
