@@ -35,6 +35,11 @@ body * {
     font-size: 18px;
 }
 
+@font-face {
+    font-family: almarai;
+    src: url("fonts/almarai/Almarai-Regular.ttf") format("opentype");
+}
+
 hr {
     height: 2px;
     background-color: #802c11 ;
@@ -42,7 +47,7 @@ hr {
 }
 
 h1 {
-    font-family: 'Montserrat';
+    font-family: almarai;
     text-align: center;
     font-size: 50px;
     font-weight: 1000;
@@ -51,13 +56,13 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat';
+    font-family: almarai;
     font-size: 40px;
     color: #802c11;
 }
 
 h3 {
-    font-family: 'Montserrat';
+    font-family: almarai;
     font-size: 22px;
     margin-bottom: 0;
     color: #802c11;
@@ -88,7 +93,7 @@ div {
 }
 
 h5 {
-    font-family: 'Montserrat';
+    font-family: almarai;
     text-align: center;
     font-weight: normal;
     font-style: italic;
