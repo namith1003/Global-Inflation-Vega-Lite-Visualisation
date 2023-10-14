@@ -126,7 +126,7 @@
   ],
   "config": {
     "font": "almarai",
-    "background":"#FDB475",
+    "background":"#FFEEB6",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
