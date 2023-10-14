@@ -56,7 +56,10 @@
         "color": {"field": "Continent", "type": "nominal",
         "legend":{
           "title": "Continents",
-          "orient": "bottom"
+          "orient": "bottom",
+          "strokeColor": "black",
+          "fillColor": "white",
+          "padding": 3
         }
         },
         "tooltip": [
