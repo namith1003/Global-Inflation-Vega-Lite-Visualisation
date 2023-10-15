@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 150,
+  "width": 390,
+  "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivot_average.csv"},
+  "title": {"text": "Average Producer Inflation, 1970-2022",
+  "orient":"top"},
+  "mark": "rect",
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal","title": "Year",
+          "axis": {
+              "values": [],
+              "gridOpacity":0
+          }},
+    "y": {"field": "Continent", "type": "nominal", "title": null,"axis": {"orient":"right", "tickOpacity":0, "labelPadding":25, "gridOpacity":0}},
+    "fill": {
+      "field": "Continent",
+      "type": "nominal",
+      "legend": {
+        "title": "Continent",
+        "orient": "bottom",
+        "direction": "horizontal",
+        "padding": 3
+      }
+    },
+    "opacity": {
+      "field": "Average Producer Inflation",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [0, 1, 5, 15, 20, 30, 50, 100, 1000],
+        "range": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+      },
+      "legend": {
+        "title": "Continent",
+        "orient": "left",
+        "direction": "vertical",
+        "padding": 3
+      }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {"field": "Continent", "type": "nominal", "title": "Continent"},
+      {"field": "Average Producer Inflation", "type": "quantitative", "title": "Average Producer Inflation"}
+    ]
+  },
+  "config": {
+    "axis": {"tickBand": "extent"},
+    "font": "almarai",
+    "style": {"cell": {"stroke": "transparent"}}
+  }
+}
