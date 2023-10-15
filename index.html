@@ -167,12 +167,12 @@
     var specVis4 = "./js/EnergyOverallScatter.json";
     var specVis5 = "./js/ConsumerOverallScatter.json";
     var specVis6 = "./js/ProducerOverallScatter.json";
+    var specVis7 = "./js/FoodHeatMap.json";
+    var specVis8 = "./js/ConsumerHeatMap.json";
+    var specVis9 = "./js/EnergyHeatMap.json";
+    var specVis10 = "./js/ProducerHeatMap.json";
 
     /*
-    var specVis7 = "./JS/russiaHeatMap.json";
-    var specVis8 = "./JS/usHeatMap.json";
-    var specVis9 = "./JS/GDPbarChart.json";
-    var specVis10 = "./JS/continentalMap.json";
     var specVis11 = "./JS/stackedBarAge.json";
     var specVis12 = "./JS/StackedAgeBrush.json";
     */
@@ -194,8 +194,7 @@
 
     vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
     }).catch(console.error);
-
-    /*
+    
     vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
@@ -208,9 +207,11 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    //vegaEmbed('#vis10', specVis10, { "actions": false }).then(function (result) {
+    vegaEmbed('#vis10', specVis10, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    //}).catch(console.error);
+    }).catch(console.error);
+
+    /*
 
     vegaEmbed('#vis11', specVis11, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
