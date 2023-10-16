@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 835,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/malaysia_inflation.csv"
+  },
+  "params": [
+    {
+      "name": "Series_Name",
+      "value": "Energy Consumer Price Inflation"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "orange",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "timeUnit": "year",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Inflation",
+          "type": "quantitative",
+          "title": "Inflation",
+          "scale": {"type": "linear"}
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "title": "Country",
+          "scale": {
+            "range": ["#5B4E77", "#F79D84"]
+          },
+          "legend": {
+            "title": "Country",
+            "orient": "bottom"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Series_Name == Series_Name"
+        }
+      ]
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "timeUnit": "year",
+          "title": "Year",
+          "axis": {
+            "labelAngle": 45,
+            "gridOpacity": 0
+          }
+        },
+        "y": {
+          "field": "Inflation",
+          "type": "quantitative",
+          "title": "Inflation",
+          "axis": {
+            "grid": false,
+            "labelOverlap": true
+          },
+          "scale": {"type": "linear"}
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "title": "Country",
+          "scale": {
+            "range": ["#5B4E77", "#F79D84"]
+          },
+          "legend": {
+            "title": "Country",
+            "orient": "bottom"
+          }
+        },
+        "size": {
+          "value": 100
+        },
+        "opacity": {
+          "value": 1
+        },
+        "tooltip": [
+          {"field": "Series_Name", "title": "Series Name"},
+          {"field": "Country", "title": "Country"},
+          {"field": "Year", "title": "Year"},
+          {"field": "Inflation", "title": "Inflation", "format": ",.2r"}
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.Series_Name == Series_Name"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "sulphur",
+    "background": "#f8f8f8",
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}
