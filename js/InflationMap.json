@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Global Inflation For All Countries by Year",
-  "width": 800,
-  "height": 600,
+  "width": 1300,
+  "height": 800,
   "projection": {"type": "equalEarth"},
   "params": [
     {
@@ -10,6 +10,11 @@
       "value": 2022
     }
   ],
+  "config": {
+    "font": "almarai",
+    "background":"#FFEEB6",
+    "style": {"cell": {"stroke": "transparent"}}
+  },
   "layer": [
     {
       "data": {
