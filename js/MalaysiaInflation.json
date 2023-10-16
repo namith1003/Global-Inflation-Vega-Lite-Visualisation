@@ -106,12 +106,8 @@
     }
   ],
   "config": {
-    "font": "sulphur",
-    "background": "#f8f8f8",
-    "style": {
-      "cell": {
-        "stroke": "transparent"
-      }
-    }
+    "font": "almarai",
+    "background":"#FFEEB6",
+    "style": {"cell": {"stroke": "transparent"}}
   }
 }
