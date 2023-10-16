@@ -29,7 +29,7 @@
       "legend": {
         "title": "Inflation",
         "orient": "bottom",
-        "direction": "vertical",
+        "direction": "horizontal",
         "strokeColor": "black",
         "fillColor": "white",
         "padding": 3, 
