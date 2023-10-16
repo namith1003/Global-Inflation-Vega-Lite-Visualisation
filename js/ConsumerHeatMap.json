@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 300,
-  "width": 500,
+  "width": 600,
   "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivot_average.csv"},
   "title": {"text": "Average Consumer Inflation, 1970-2022",
   "orient":"top"},
