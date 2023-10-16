@@ -291,18 +291,6 @@
       })
     }).catch(console.error);
 
-    vegaEmbed("#vis11", specVis11,{ "actions": false }).then((result) => {
-      const view = result.view;
-      // Add event listener for the slider
-      const inflation = document.getElementById("inflation-select2");
-
-      inflation.addEventListener("input", function () {
-        const selectedInflation = this.value;
-        view.signal("Series_Name", selectedInflation).runAsync();
-      })
-    }).catch(console.error);
-
-
       </script>
 </body>
 
