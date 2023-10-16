@@ -174,7 +174,19 @@
         </div>
         <div class="pure-u-3-4">
             <div class="description description-right">
-            <h3 style="margin-bottom: 20px;">Categorical Country Inflation, 1970-2022</h3>
+              <h3 style="margin-bottom: 20px;">Categorical Country Inflation, 1970-2022</h3>
+              <div id="vis11" class="vis-container"></div>
+    
+              <div id="slider-container-2">
+                <label for="inflation-select-2"><b>Inflation Type:</b> </label><p></p>
+                <select id="inflation-select-2">
+                  <option value="Headline Consumer Price Inflation">Overall Inflation</option>
+                  <option value="Energy Consumer Price Inflation">Energy Inflation</option>
+                  <option value="Food Consumer Price Inflation">Food Inflation</option>
+                  <option value="Official Core Consumer Price Inflation">Consumer Inflation</option>
+                  <option value="Producer Price Inflation" selected>Producer Inflation</option>
+                </select>
+              </div> 
             </div>
         </div>
       </div>
@@ -195,11 +207,8 @@
     var specVis8 = "./js/ConsumerHeatMap.json";
     var specVis9 = "./js/EnergyHeatMap.json";
     var specVis10 = "./js/ProducerHeatMap.json";
+    var specVis11 = "./js/MalaysiaInflation.json";
 
-    /*
-    var specVis11 = "./JS/stackedBarAge.json";
-    var specVis12 = "./JS/StackedAgeBrush.json";
-    */
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
     }).catch(console.error);
@@ -235,13 +244,9 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    /*
-
     vegaEmbed('#vis11', specVis11, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-
-    */
 
 
     vegaEmbed("#vis1", specVis1,{ "actions": false }).then((result) => {
@@ -257,20 +262,6 @@
       });
     }).catch(console.error);
 
-    /*
-
-    vegaEmbed("#vis4", specVis4,{ "actions": false }).then((result) => {
-      const view = result.view;
-      // Add event listener for the slider
-      const country = document.getElementById("country-select");
-      country.addEventListener("input", function () {
-        const selectedCountry = this.value;
-        view.signal("country_selection", selectedCountry).runAsync();
-
-      })
-    }).catch(console.error);
-
-    */
 
     vegaEmbed("#vis2", specVis2,{ "actions": false }).then((result) => {
       const view = result.view;
@@ -278,32 +269,28 @@
       // Add event listener for the slider
       const slider = document.getElementById("year-slider2");
       const sliderValue = document.getElementById("slider-value2");
-      const continent = document.getElementById("inflation-select");
+      const inflation = document.getElementById("inflation-select");
       slider.addEventListener("input", function () {
         const yearSelection = +this.value;
         sliderValue.textContent = yearSelection;
         view.signal("Year", yearSelection).runAsync();
       });
-      continent.addEventListener("input", function () {
+      inflation.addEventListener("input", function () {
         const selectedCountry = this.value;
         view.signal("Series_Name", selectedCountry).runAsync();
       })
     }).catch(console.error);
 
-    /*
-
-    vegaEmbed("#vis12", specVis12,{ "actions": false }).then((result) => {
+    vegaEmbed("#vis11", specVis2,{ "actions": false }).then((result) => {
       const view = result.view;
-      // Add event listener for the slider
-      const country = document.getElementById("country-select2");
-      country.addEventListener("input", function () {
-        const selectedCountry = this.value;
-        view.signal("country_select", selectedCountry).runAsync();
+      const inflation = document.getElementById("inflation-select-2");
 
+      inflation.addEventListener("input", function () {
+        const selectedSeries = this.value;
+        view.signal("Series_Name", selectedSeries).runAsync();
       })
     }).catch(console.error);
 
-    */
       </script>
 </body>
 
