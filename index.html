@@ -177,7 +177,7 @@
               <h3 style="margin-bottom: 20px;">Categorical Country Inflation, 1970-2022</h3>
               <div id="vis11" class="vis-container"></div>
     
-              <div id="slider-container-2">
+              <div id="slider-container">
                 <label for="inflation-select-2"><b>Inflation Type:</b> </label><p></p>
                 <select id="inflation-select-2">
                   <option value="Headline Consumer Price Inflation">Overall Inflation</option>
@@ -290,6 +290,18 @@
         view.signal("Series_Name", selectedSeries).runAsync();
       })
     }).catch(console.error);
+
+    vegaEmbed("#vis11", specVis11,{ "actions": false }).then((result) => {
+      const view = result.view;
+      // Add event listener for the slider
+      const inflation = document.getElementById("inflation-select2");
+
+      inflation.addEventListener("input", function () {
+        const selectedInflation = this.value;
+        view.signal("Series_Name", selectedInflation).runAsync();
+      })
+    }).catch(console.error);
+
 
       </script>
 </body>
