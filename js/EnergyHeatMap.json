@@ -47,6 +47,7 @@
   "config": {
     "axis": {"tickBand": "extent"},
     "font": "almarai",
+    "background":"#FFEEB6",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
