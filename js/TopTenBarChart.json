@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 650,
-  "height": 600,
+  "width": 800,
+  "height": 700,
   "data": {
     "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/global_inflation.csv"
   },
