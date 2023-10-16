@@ -30,6 +30,8 @@
         "title": "Inflation",
         "orient": "bottom",
         "direction": "vertical",
+        "strokeColor": "black",
+        "fillColor": "white",
         "padding": 3, 
         "values": [0, 5, 15,20,30,50,100,1000]
       }
