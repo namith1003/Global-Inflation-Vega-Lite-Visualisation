@@ -26,13 +26,7 @@
         "domain": [0, 1, 5, 15, 20, 30, 50, 100, 1000],
         "range": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
       },
-      "legend": {
-        "title": "Continent",
-        "orient": "right",
-        "direction": "vertical",
-        "padding": 3, 
-        "values": [0, 5, 15,20,30,50,100,1000]
-      }
+      "legend": null
     },
     "tooltip": [
       {"field": "Year", "type": "ordinal", "title": "Year"},
