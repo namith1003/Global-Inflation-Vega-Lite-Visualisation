@@ -12,16 +12,11 @@
               "values": [],
               "gridOpacity":0
           }},
-    "y": {"field": "Continent", "type": "nominal", "title": null,"axis": {"orient":"right", "tickOpacity":0, "labelPadding":25, "gridOpacity":0}},
+    "y": {"field": "Continent", "type": "nominal", "title": null,"axis": {"orient":"right", "values": [], "tickOpacity":0, "labelPadding":25, "gridOpacity":0}},
     "fill": {
       "field": "Continent",
       "type": "nominal",
-      "legend": {
-        "title": "Continent",
-        "orient": "bottom",
-        "direction": "horizontal",
-        "padding": 3
-      }
+      "legend": null
     },
     "opacity": {
       "field": "Average Official Core Inflation",
@@ -33,9 +28,10 @@
       },
       "legend": {
         "title": "Continent",
-        "orient": "left",
+        "orient": "right",
         "direction": "vertical",
-        "padding": 3
+        "padding": 3, 
+        "values": [0, 5, 15,20,30,50,100,1000]
       }
     },
     "tooltip": [
