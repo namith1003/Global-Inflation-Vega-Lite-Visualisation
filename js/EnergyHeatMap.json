@@ -16,12 +16,7 @@
     "fill": {
       "field": "Continent",
       "type": "nominal",
-      "legend": {
-        "title": "Continent",
-        "orient": "bottom",
-        "direction": "horizontal",
-        "padding": 3
-      }
+      "legend": null
     },
     "opacity": {
       "field": "Average Energy Inflation",
