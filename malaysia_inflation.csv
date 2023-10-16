@@ -1,11 +1,531 @@
-Country_Code,IMF_Country_Code,Country,Indicator_Type,Series_Name,Y_1970,Y_1971,Y_1972,Y_1973,Y_1974,Y_1975,Y_1976,Y_1977,Y_1978,Y_1979,Y_1980,Y_1981,Y_1982,Y_1983,Y_1984,Y_1985,Y_1986,Y_1987,Y_1988,Y_1989,Y_1990,Y_1991,Y_1992,Y_1993,Y_1994,Y_1995,Y_1996,Y_1997,Y_1998,Y_1999,Y_2000,Y_2001,Y_2002,Y_2003,Y_2004,Y_2005,Y_2006,Y_2007,Y_2008,Y_2009,Y_2010,Y_2011,Y_2012,Y_2013,Y_2014,Y_2015,Y_2016,Y_2017,Y_2018,Y_2019,Y_2020,Y_2021,Y_2022,Note,Alpha_2,Flag_Image,Continent
-MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,1.84,1.61,3.23,10.56,17.33,4.49,2.63,4.79,4.86,3.65,6.72,9.7,5.83,3.7,3.9,2.59,0.35,0.74,0.29,2.56,3.04,4.33,4.78,3.55,3.69,3.47,3.48,2.65,5.29,2.73,1.55,1.43,1.79,1.07,1.42,3.04,3.62,2.03,5.43,0.6,1.72,3.17,1.66,2.11,3.14,2.1,2.08,3.8,0.97,0.66,-1.14,2.48,3.38,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia
-MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4,1.7,3.9,1.2,-0.2,-0.4,-1.7,2.2,-3.4,3.0,2.0,0.2,1.5,1.3,0.0,0.5,0.5,1.4,1.54,1.31,1.52,1.41,1.15,1.78,1.58,1.77,3.39,2.45,2.44,2.2,1.99,1.87,-1.73,1.57,1.95,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia
-MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,2.1,1.5,3.2,15.9,26.1,3.8,2.0,5.5,5.0,2.6,4.6,11.5,7.6,0.8,3.5,-2.4,0.2,-0.5,3.7,3.7,4.3,4.9,6.4,2.4,5.3,4.9,5.7,4.1,8.9,4.6,1.9,0.7,0.7,1.3,2.1,3.7,3.39,3.02,8.84,4.13,2.39,4.81,2.69,3.56,3.34,3.63,3.78,3.98,1.63,1.65,1.27,1.77,5.3,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia
-MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.53,1.51,2.62,1.58,1.35,1.88,1.35,1.36,2.24,3.35,2.73,1.79,0.55,1.09,0.95,0.44,1.55,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia
-MYS,548.0,Malaysia,Inflation,Producer Price Inflation,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.69,7.34,4.04,0.66,4.04,1.11,1.45,4.88,4.6,2.28,2.62,10.79,-3.27,3.68,0.53,-0.76,4.6,6.98,6.86,5.26,5.53,10.19,-7.32,5.96,12.32,-0.47,-2.7,1.52,-7.45,-1.05,6.69,-1.14,-1.35,-2.66,9.46,8.7,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia
-,,Global,,Energy Consumer Price Inflation,2.5069767441860464,2.5896511627906977,2.2834302325581395,3.632616279069767,13.544476744186047,7.7311046511627906,8.92843023255814,5.646627906976744,5.710290697674418,10.136046511627908,13.24482558139535,12.186104651162792,9.460523255813953,12.517616279069768,19.847558139534883,140.47866279069765,8.055116279069768,9.449302325581396,14.747209302325581,37.32889534883721,40.28174418604651,19.926627906976744,85.22749999999999,85.47447674418605,49.90616279069768,42.48156976744186,13.92453488372093,16.94982558139535,6.446220930232558,6.912558139534884,10.32924418604651,6.665290697674419,5.248662790697674,5.576976744186046,7.54110465116279,6.606802325581395,7.618720930232558,6.081337209302325,7.867848837209302,2.0743604651162793,4.280639534883721,4.895058139534884,4.281029069767442,3.0436744186046507,3.3244186046511626,2.659029069767442,2.322441860465116,4.310819767441861,555.6549825581395,106.35499418604651,3.910232558139535,16.004825581395348,17.851162790697675,,,,
-,,Global,,Food Consumer Price Inflation,4.605054945054945,5.081703296703297,6.821978021978022,13.3789010989011,19.715604395604398,13.252637362637362,10.272197802197802,13.594285714285714,9.075714285714286,10.74554945054945,14.149395604395604,12.381373626373625,12.253846153846153,15.32642857142857,21.89835164835165,79.88626373626374,20.26478021978022,22.22197802197802,21.84274725274725,78.97329670329671,133.33423076923077,54.14478021978022,87.07241758241759,100.57873626373627,96.61934065934066,27.27208791208791,10.472417582417583,13.864945054945055,8.146428571428572,7.388626373626374,5.418681318681319,5.842307692307692,5.755824175824175,7.107032967032967,6.994835164835164,6.746373626373627,11.604010989010991,47.87802197802198,54.42076923076924,5.198241758241759,4.107637362637363,6.968461538461538,5.501889250252748,4.485336832346154,3.5062373293021976,4.806597590631868,5.141912373664836,7.074481256554945,214.28741758241756,102.1258021978022,22.137694378467035,19.659945054945055,15.340549450549451,,,,
-,,Global,,Headline Consumer Price Inflation,4.675862068965517,4.962216748768473,6.190591133004927,12.072709359605913,17.73472906403941,13.957832512315271,12.133694581280787,12.053300492610838,9.836650246305418,12.307192118226602,15.244827586206895,13.769261083743842,13.948522167487686,16.30857142857143,23.532561576354677,78.18541871921182,20.22955665024631,83.45748768472907,47.14433497536945,109.42812807881774,101.94349753694581,39.24822660098522,113.75167487684729,173.69743842364534,307.57,50.148768472906404,41.894137931034486,16.723004926108374,8.692463054187192,10.901724137931033,11.357339901477832,8.338620689655173,5.9351724137931035,5.878719211822661,5.7670443349753695,5.561625615763547,5.937586206896551,5.430689655172414,10.51463054187192,4.420492610837439,4.253103448275862,6.114285714285715,5.554975369458129,4.585517241379311,3.9801970443349757,4.234088669950739,6.9041871921182265,7.31128078817734,326.4271921182266,103.1041379310345,102.60187192118227,15.915073891625617,13.71088669950739,,,,
-,,Global,,Official Core Consumer Price Inflation,0.6187124111238937,1.0753982300884957,1.454867256637168,2.298407079646018,3.379646017699115,1.586637168141593,3.8922123893805307,2.3449557522123894,2.4332743362831857,2.8715044247787613,4.424424778761062,4.350088495575221,3.7631858407079646,4.000707964601769,5.185929203539823,4.787345132743363,2.3785840707964603,2.849734513274336,3.34070796460177,3.95,7.938761061946903,2.8953982300884955,11.078672566371683,20.060442477876105,21.34858407079646,3.8816814159292035,4.760088495575221,2.7607964601769908,2.4030088495575224,1.9485840707964601,2.819469026548673,1.4501769911504425,2.1424778761061947,3.1922123893805314,2.8358407079646017,2.4292035398230087,2.788053097345133,3.547433628318584,5.018053097345132,2.2906194690265487,3.5642477876106193,4.2872566371681415,3.964513274336283,3.8088495575221235,3.4957522123893803,3.479026548672566,5.895132743362832,2.860176991150442,2.9132743362831857,2.6015044247787613,3.403716814159292,5.983274336283186,5.042566371681416,,,,
-,,Global,,Producer Price Inflation,1.6619469026548674,0.825929203539823,2.283362831858407,4.259203539823009,5.235575221238938,3.749115044247788,3.0512389380530975,2.657964601769912,2.2738053097345134,4.353805309734513,6.285221238938053,3.984336283185841,4.112477876106195,4.580442477876106,6.840088495575221,5.536194690265487,3.2049557522123893,4.634513274336284,9.886017699115044,27.891061946902653,68.87699115044248,11.552212389380532,12.398761061946901,181.2651327433628,106.69283185840709,20.061150442477874,9.674690265486726,14.896283185840709,3.903628318584071,7.51566371681416,8.536814159292035,3.8334513274336284,2.7515929203539824,3.1463716814159293,4.336548672566371,4.095663716814159,4.708849557522124,3.8856637168141592,9.28575221238938,-1.5456637168141594,6.173185840707965,7.564159292035399,3.1235398230088496,1.3490265486725663,1.8727433628318584,0.34893805309734516,3.503362831858407,13.422477876106194,1503.1853982300884,2.9397345132743364,0.5669026548672567,11.392743362831858,20.17221238938053,,,,
+Country_Code,IMF_Country_Code,Country,Indicator_Type,Series_Name,Note,Alpha_2,Flag_Image,Continent,Year,Inflation
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1970,1.84
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1970,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1970,2.1
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1970,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1970,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1970,2.5069767441860464
+,,Global,,Food Consumer Price Inflation,,,,,1970,4.605054945054945
+,,Global,,Headline Consumer Price Inflation,,,,,1970,4.675862068965517
+,,Global,,Official Core Consumer Price Inflation,,,,,1970,0.6187124111238937
+,,Global,,Producer Price Inflation,,,,,1970,1.6619469026548674
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1971,1.61
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1971,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1971,1.5
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1971,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1971,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1971,2.5896511627906977
+,,Global,,Food Consumer Price Inflation,,,,,1971,5.081703296703297
+,,Global,,Headline Consumer Price Inflation,,,,,1971,4.962216748768473
+,,Global,,Official Core Consumer Price Inflation,,,,,1971,1.0753982300884957
+,,Global,,Producer Price Inflation,,,,,1971,0.825929203539823
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1972,3.23
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1972,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1972,3.2
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1972,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1972,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1972,2.2834302325581395
+,,Global,,Food Consumer Price Inflation,,,,,1972,6.821978021978022
+,,Global,,Headline Consumer Price Inflation,,,,,1972,6.190591133004927
+,,Global,,Official Core Consumer Price Inflation,,,,,1972,1.454867256637168
+,,Global,,Producer Price Inflation,,,,,1972,2.283362831858407
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1973,10.56
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1973,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1973,15.9
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1973,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1973,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1973,3.632616279069767
+,,Global,,Food Consumer Price Inflation,,,,,1973,13.3789010989011
+,,Global,,Headline Consumer Price Inflation,,,,,1973,12.072709359605913
+,,Global,,Official Core Consumer Price Inflation,,,,,1973,2.298407079646018
+,,Global,,Producer Price Inflation,,,,,1973,4.259203539823009
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1974,17.33
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1974,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1974,26.1
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1974,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1974,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1974,13.544476744186047
+,,Global,,Food Consumer Price Inflation,,,,,1974,19.7156043956044
+,,Global,,Headline Consumer Price Inflation,,,,,1974,17.73472906403941
+,,Global,,Official Core Consumer Price Inflation,,,,,1974,3.379646017699115
+,,Global,,Producer Price Inflation,,,,,1974,5.235575221238938
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1975,4.49
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1975,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1975,3.8
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1975,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1975,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1975,7.7311046511627906
+,,Global,,Food Consumer Price Inflation,,,,,1975,13.252637362637362
+,,Global,,Headline Consumer Price Inflation,,,,,1975,13.957832512315273
+,,Global,,Official Core Consumer Price Inflation,,,,,1975,1.586637168141593
+,,Global,,Producer Price Inflation,,,,,1975,3.749115044247788
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1976,2.63
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1976,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1976,2.0
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1976,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1976,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1976,8.92843023255814
+,,Global,,Food Consumer Price Inflation,,,,,1976,10.272197802197802
+,,Global,,Headline Consumer Price Inflation,,,,,1976,12.133694581280787
+,,Global,,Official Core Consumer Price Inflation,,,,,1976,3.8922123893805303
+,,Global,,Producer Price Inflation,,,,,1976,3.051238938053097
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1977,4.79
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1977,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1977,5.5
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1977,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1977,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1977,5.646627906976744
+,,Global,,Food Consumer Price Inflation,,,,,1977,13.594285714285714
+,,Global,,Headline Consumer Price Inflation,,,,,1977,12.053300492610838
+,,Global,,Official Core Consumer Price Inflation,,,,,1977,2.3449557522123894
+,,Global,,Producer Price Inflation,,,,,1977,2.657964601769912
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1978,4.86
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1978,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1978,5.0
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1978,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1978,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1978,5.710290697674418
+,,Global,,Food Consumer Price Inflation,,,,,1978,9.075714285714286
+,,Global,,Headline Consumer Price Inflation,,,,,1978,9.836650246305418
+,,Global,,Official Core Consumer Price Inflation,,,,,1978,2.4332743362831857
+,,Global,,Producer Price Inflation,,,,,1978,2.273805309734513
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1979,3.65
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1979,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1979,2.6
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1979,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1979,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1979,10.136046511627908
+,,Global,,Food Consumer Price Inflation,,,,,1979,10.74554945054945
+,,Global,,Headline Consumer Price Inflation,,,,,1979,12.307192118226602
+,,Global,,Official Core Consumer Price Inflation,,,,,1979,2.8715044247787613
+,,Global,,Producer Price Inflation,,,,,1979,4.353805309734513
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1980,6.72
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1980,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1980,4.6
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1980,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1980,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1980,13.24482558139535
+,,Global,,Food Consumer Price Inflation,,,,,1980,14.149395604395604
+,,Global,,Headline Consumer Price Inflation,,,,,1980,15.244827586206895
+,,Global,,Official Core Consumer Price Inflation,,,,,1980,4.424424778761062
+,,Global,,Producer Price Inflation,,,,,1980,6.285221238938053
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1981,9.7
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1981,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1981,11.5
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1981,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1981,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1981,12.186104651162792
+,,Global,,Food Consumer Price Inflation,,,,,1981,12.381373626373623
+,,Global,,Headline Consumer Price Inflation,,,,,1981,13.769261083743842
+,,Global,,Official Core Consumer Price Inflation,,,,,1981,4.350088495575221
+,,Global,,Producer Price Inflation,,,,,1981,3.984336283185841
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1982,5.83
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1982,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1982,7.6
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1982,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1982,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1982,9.460523255813952
+,,Global,,Food Consumer Price Inflation,,,,,1982,12.253846153846151
+,,Global,,Headline Consumer Price Inflation,,,,,1982,13.948522167487686
+,,Global,,Official Core Consumer Price Inflation,,,,,1982,3.7631858407079646
+,,Global,,Producer Price Inflation,,,,,1982,4.112477876106195
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1983,3.7
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1983,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1983,0.8
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1983,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1983,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1983,12.517616279069768
+,,Global,,Food Consumer Price Inflation,,,,,1983,15.32642857142857
+,,Global,,Headline Consumer Price Inflation,,,,,1983,16.30857142857143
+,,Global,,Official Core Consumer Price Inflation,,,,,1983,4.000707964601769
+,,Global,,Producer Price Inflation,,,,,1983,4.580442477876106
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1984,3.9
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1984,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1984,3.5
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1984,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1984,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1984,19.847558139534883
+,,Global,,Food Consumer Price Inflation,,,,,1984,21.89835164835165
+,,Global,,Headline Consumer Price Inflation,,,,,1984,23.53256157635468
+,,Global,,Official Core Consumer Price Inflation,,,,,1984,5.185929203539823
+,,Global,,Producer Price Inflation,,,,,1984,6.840088495575221
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1985,2.59
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1985,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1985,-2.4
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1985,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1985,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1985,140.47866279069763
+,,Global,,Food Consumer Price Inflation,,,,,1985,79.88626373626374
+,,Global,,Headline Consumer Price Inflation,,,,,1985,78.18541871921182
+,,Global,,Official Core Consumer Price Inflation,,,,,1985,4.787345132743363
+,,Global,,Producer Price Inflation,,,,,1985,5.536194690265487
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1986,0.35
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1986,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1986,0.2
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1986,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1986,0.0
+,,Global,,Energy Consumer Price Inflation,,,,,1986,8.055116279069768
+,,Global,,Food Consumer Price Inflation,,,,,1986,20.26478021978022
+,,Global,,Headline Consumer Price Inflation,,,,,1986,20.22955665024631
+,,Global,,Official Core Consumer Price Inflation,,,,,1986,2.3785840707964603
+,,Global,,Producer Price Inflation,,,,,1986,3.2049557522123893
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1987,0.74
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1987,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1987,-0.5
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1987,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1987,3.69
+,,Global,,Energy Consumer Price Inflation,,,,,1987,9.449302325581396
+,,Global,,Food Consumer Price Inflation,,,,,1987,22.22197802197802
+,,Global,,Headline Consumer Price Inflation,,,,,1987,83.45748768472907
+,,Global,,Official Core Consumer Price Inflation,,,,,1987,2.849734513274336
+,,Global,,Producer Price Inflation,,,,,1987,4.634513274336284
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1988,0.29
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1988,0.4
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1988,3.7
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1988,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1988,7.34
+,,Global,,Energy Consumer Price Inflation,,,,,1988,14.74720930232558
+,,Global,,Food Consumer Price Inflation,,,,,1988,21.84274725274725
+,,Global,,Headline Consumer Price Inflation,,,,,1988,47.14433497536945
+,,Global,,Official Core Consumer Price Inflation,,,,,1988,3.34070796460177
+,,Global,,Producer Price Inflation,,,,,1988,9.886017699115044
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1989,2.56
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1989,1.7
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1989,3.7
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1989,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1989,4.04
+,,Global,,Energy Consumer Price Inflation,,,,,1989,37.32889534883721
+,,Global,,Food Consumer Price Inflation,,,,,1989,78.97329670329671
+,,Global,,Headline Consumer Price Inflation,,,,,1989,109.42812807881774
+,,Global,,Official Core Consumer Price Inflation,,,,,1989,3.95
+,,Global,,Producer Price Inflation,,,,,1989,27.891061946902653
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1990,3.04
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1990,3.9
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1990,4.3
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1990,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1990,0.66
+,,Global,,Energy Consumer Price Inflation,,,,,1990,40.28174418604651
+,,Global,,Food Consumer Price Inflation,,,,,1990,133.33423076923077
+,,Global,,Headline Consumer Price Inflation,,,,,1990,101.9434975369458
+,,Global,,Official Core Consumer Price Inflation,,,,,1990,7.938761061946903
+,,Global,,Producer Price Inflation,,,,,1990,68.87699115044248
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1991,4.33
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1991,1.2
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1991,4.9
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1991,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1991,4.04
+,,Global,,Energy Consumer Price Inflation,,,,,1991,19.926627906976744
+,,Global,,Food Consumer Price Inflation,,,,,1991,54.14478021978022
+,,Global,,Headline Consumer Price Inflation,,,,,1991,39.24822660098522
+,,Global,,Official Core Consumer Price Inflation,,,,,1991,2.8953982300884955
+,,Global,,Producer Price Inflation,,,,,1991,11.552212389380532
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1992,4.78
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1992,-0.2
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1992,6.4
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1992,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1992,1.11
+,,Global,,Energy Consumer Price Inflation,,,,,1992,85.22749999999999
+,,Global,,Food Consumer Price Inflation,,,,,1992,87.07241758241759
+,,Global,,Headline Consumer Price Inflation,,,,,1992,113.75167487684728
+,,Global,,Official Core Consumer Price Inflation,,,,,1992,11.078672566371685
+,,Global,,Producer Price Inflation,,,,,1992,12.3987610619469
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1993,3.55
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1993,-0.4
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1993,2.4
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1993,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1993,1.45
+,,Global,,Energy Consumer Price Inflation,,,,,1993,85.47447674418605
+,,Global,,Food Consumer Price Inflation,,,,,1993,100.57873626373627
+,,Global,,Headline Consumer Price Inflation,,,,,1993,173.69743842364534
+,,Global,,Official Core Consumer Price Inflation,,,,,1993,20.060442477876105
+,,Global,,Producer Price Inflation,,,,,1993,181.2651327433628
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1994,3.69
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1994,-1.7
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1994,5.3
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1994,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1994,4.88
+,,Global,,Energy Consumer Price Inflation,,,,,1994,49.90616279069768
+,,Global,,Food Consumer Price Inflation,,,,,1994,96.61934065934066
+,,Global,,Headline Consumer Price Inflation,,,,,1994,307.57
+,,Global,,Official Core Consumer Price Inflation,,,,,1994,21.34858407079646
+,,Global,,Producer Price Inflation,,,,,1994,106.69283185840708
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1995,3.47
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1995,2.2
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1995,4.9
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1995,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1995,4.6
+,,Global,,Energy Consumer Price Inflation,,,,,1995,42.48156976744186
+,,Global,,Food Consumer Price Inflation,,,,,1995,27.27208791208791
+,,Global,,Headline Consumer Price Inflation,,,,,1995,50.1487684729064
+,,Global,,Official Core Consumer Price Inflation,,,,,1995,3.881681415929204
+,,Global,,Producer Price Inflation,,,,,1995,20.061150442477874
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1996,3.48
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1996,-3.4
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1996,5.7
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1996,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1996,2.28
+,,Global,,Energy Consumer Price Inflation,,,,,1996,13.92453488372093
+,,Global,,Food Consumer Price Inflation,,,,,1996,10.472417582417584
+,,Global,,Headline Consumer Price Inflation,,,,,1996,41.894137931034486
+,,Global,,Official Core Consumer Price Inflation,,,,,1996,4.760088495575221
+,,Global,,Producer Price Inflation,,,,,1996,9.674690265486726
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1997,2.65
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1997,3.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1997,4.1
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1997,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1997,2.62
+,,Global,,Energy Consumer Price Inflation,,,,,1997,16.94982558139535
+,,Global,,Food Consumer Price Inflation,,,,,1997,13.864945054945055
+,,Global,,Headline Consumer Price Inflation,,,,,1997,16.723004926108374
+,,Global,,Official Core Consumer Price Inflation,,,,,1997,2.7607964601769908
+,,Global,,Producer Price Inflation,,,,,1997,14.896283185840709
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1998,5.29
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1998,2.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1998,8.9
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1998,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1998,10.79
+,,Global,,Energy Consumer Price Inflation,,,,,1998,6.446220930232558
+,,Global,,Food Consumer Price Inflation,,,,,1998,8.146428571428572
+,,Global,,Headline Consumer Price Inflation,,,,,1998,8.692463054187192
+,,Global,,Official Core Consumer Price Inflation,,,,,1998,2.4030088495575224
+,,Global,,Producer Price Inflation,,,,,1998,3.903628318584071
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1999,2.73
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1999,0.2
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1999,4.6
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1999,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,1999,-3.27
+,,Global,,Energy Consumer Price Inflation,,,,,1999,6.912558139534884
+,,Global,,Food Consumer Price Inflation,,,,,1999,7.388626373626374
+,,Global,,Headline Consumer Price Inflation,,,,,1999,10.901724137931032
+,,Global,,Official Core Consumer Price Inflation,,,,,1999,1.94858407079646
+,,Global,,Producer Price Inflation,,,,,1999,7.51566371681416
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2000,1.55
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2000,1.5
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2000,1.9
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2000,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2000,3.68
+,,Global,,Energy Consumer Price Inflation,,,,,2000,10.32924418604651
+,,Global,,Food Consumer Price Inflation,,,,,2000,5.418681318681319
+,,Global,,Headline Consumer Price Inflation,,,,,2000,11.357339901477832
+,,Global,,Official Core Consumer Price Inflation,,,,,2000,2.819469026548673
+,,Global,,Producer Price Inflation,,,,,2000,8.536814159292035
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2001,1.43
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2001,1.3
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2001,0.7
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2001,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2001,0.53
+,,Global,,Energy Consumer Price Inflation,,,,,2001,6.665290697674419
+,,Global,,Food Consumer Price Inflation,,,,,2001,5.842307692307692
+,,Global,,Headline Consumer Price Inflation,,,,,2001,8.338620689655173
+,,Global,,Official Core Consumer Price Inflation,,,,,2001,1.4501769911504423
+,,Global,,Producer Price Inflation,,,,,2001,3.833451327433629
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2002,1.79
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2002,0.0
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2002,0.7
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2002,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2002,-0.76
+,,Global,,Energy Consumer Price Inflation,,,,,2002,5.248662790697674
+,,Global,,Food Consumer Price Inflation,,,,,2002,5.755824175824175
+,,Global,,Headline Consumer Price Inflation,,,,,2002,5.935172413793104
+,,Global,,Official Core Consumer Price Inflation,,,,,2002,2.1424778761061947
+,,Global,,Producer Price Inflation,,,,,2002,2.7515929203539824
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2003,1.07
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2003,0.5
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2003,1.3
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2003,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2003,4.6
+,,Global,,Energy Consumer Price Inflation,,,,,2003,5.576976744186046
+,,Global,,Food Consumer Price Inflation,,,,,2003,7.107032967032967
+,,Global,,Headline Consumer Price Inflation,,,,,2003,5.878719211822661
+,,Global,,Official Core Consumer Price Inflation,,,,,2003,3.1922123893805314
+,,Global,,Producer Price Inflation,,,,,2003,3.1463716814159293
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2004,1.42
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2004,0.5
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2004,2.1
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2004,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2004,6.98
+,,Global,,Energy Consumer Price Inflation,,,,,2004,7.54110465116279
+,,Global,,Food Consumer Price Inflation,,,,,2004,6.994835164835164
+,,Global,,Headline Consumer Price Inflation,,,,,2004,5.7670443349753695
+,,Global,,Official Core Consumer Price Inflation,,,,,2004,2.8358407079646017
+,,Global,,Producer Price Inflation,,,,,2004,4.336548672566371
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2005,3.04
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2005,1.4
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2005,3.7
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2005,0.0
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2005,6.86
+,,Global,,Energy Consumer Price Inflation,,,,,2005,6.606802325581395
+,,Global,,Food Consumer Price Inflation,,,,,2005,6.746373626373627
+,,Global,,Headline Consumer Price Inflation,,,,,2005,5.561625615763547
+,,Global,,Official Core Consumer Price Inflation,,,,,2005,2.4292035398230087
+,,Global,,Producer Price Inflation,,,,,2005,4.095663716814159
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2006,3.62
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2006,1.54
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2006,3.39
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2006,1.53
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2006,5.26
+,,Global,,Energy Consumer Price Inflation,,,,,2006,7.618720930232558
+,,Global,,Food Consumer Price Inflation,,,,,2006,11.604010989010993
+,,Global,,Headline Consumer Price Inflation,,,,,2006,5.937586206896551
+,,Global,,Official Core Consumer Price Inflation,,,,,2006,2.788053097345133
+,,Global,,Producer Price Inflation,,,,,2006,4.708849557522124
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2007,2.03
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2007,1.31
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2007,3.02
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2007,1.51
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2007,5.53
+,,Global,,Energy Consumer Price Inflation,,,,,2007,6.081337209302325
+,,Global,,Food Consumer Price Inflation,,,,,2007,47.87802197802198
+,,Global,,Headline Consumer Price Inflation,,,,,2007,5.430689655172414
+,,Global,,Official Core Consumer Price Inflation,,,,,2007,3.547433628318584
+,,Global,,Producer Price Inflation,,,,,2007,3.8856637168141592
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2008,5.43
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2008,1.52
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2008,8.84
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2008,2.62
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2008,10.19
+,,Global,,Energy Consumer Price Inflation,,,,,2008,7.867848837209302
+,,Global,,Food Consumer Price Inflation,,,,,2008,54.42076923076924
+,,Global,,Headline Consumer Price Inflation,,,,,2008,10.51463054187192
+,,Global,,Official Core Consumer Price Inflation,,,,,2008,5.018053097345132
+,,Global,,Producer Price Inflation,,,,,2008,9.28575221238938
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2009,0.6
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2009,1.41
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2009,4.13
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2009,1.58
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2009,-7.32
+,,Global,,Energy Consumer Price Inflation,,,,,2009,2.0743604651162797
+,,Global,,Food Consumer Price Inflation,,,,,2009,5.198241758241759
+,,Global,,Headline Consumer Price Inflation,,,,,2009,4.420492610837439
+,,Global,,Official Core Consumer Price Inflation,,,,,2009,2.2906194690265487
+,,Global,,Producer Price Inflation,,,,,2009,-1.5456637168141594
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2010,1.72
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2010,1.15
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2010,2.39
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2010,1.35
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2010,5.96
+,,Global,,Energy Consumer Price Inflation,,,,,2010,4.280639534883721
+,,Global,,Food Consumer Price Inflation,,,,,2010,4.107637362637363
+,,Global,,Headline Consumer Price Inflation,,,,,2010,4.253103448275862
+,,Global,,Official Core Consumer Price Inflation,,,,,2010,3.5642477876106198
+,,Global,,Producer Price Inflation,,,,,2010,6.173185840707965
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2011,3.17
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2011,1.78
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2011,4.81
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2011,1.88
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2011,12.32
+,,Global,,Energy Consumer Price Inflation,,,,,2011,4.895058139534884
+,,Global,,Food Consumer Price Inflation,,,,,2011,6.968461538461538
+,,Global,,Headline Consumer Price Inflation,,,,,2011,6.114285714285715
+,,Global,,Official Core Consumer Price Inflation,,,,,2011,4.2872566371681415
+,,Global,,Producer Price Inflation,,,,,2011,7.564159292035399
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2012,1.66
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2012,1.58
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2012,2.69
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2012,1.35
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2012,-0.47
+,,Global,,Energy Consumer Price Inflation,,,,,2012,4.281029069767442
+,,Global,,Food Consumer Price Inflation,,,,,2012,5.501889250252748
+,,Global,,Headline Consumer Price Inflation,,,,,2012,5.554975369458129
+,,Global,,Official Core Consumer Price Inflation,,,,,2012,3.964513274336283
+,,Global,,Producer Price Inflation,,,,,2012,3.1235398230088496
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2013,2.11
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2013,1.77
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2013,3.56
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2013,1.36
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2013,-2.7
+,,Global,,Energy Consumer Price Inflation,,,,,2013,3.0436744186046507
+,,Global,,Food Consumer Price Inflation,,,,,2013,4.485336832346154
+,,Global,,Headline Consumer Price Inflation,,,,,2013,4.585517241379311
+,,Global,,Official Core Consumer Price Inflation,,,,,2013,3.808849557522124
+,,Global,,Producer Price Inflation,,,,,2013,1.3490265486725663
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2014,3.14
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2014,3.39
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2014,3.34
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2014,2.24
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2014,1.52
+,,Global,,Energy Consumer Price Inflation,,,,,2014,3.3244186046511626
+,,Global,,Food Consumer Price Inflation,,,,,2014,3.5062373293021976
+,,Global,,Headline Consumer Price Inflation,,,,,2014,3.980197044334976
+,,Global,,Official Core Consumer Price Inflation,,,,,2014,3.4957522123893803
+,,Global,,Producer Price Inflation,,,,,2014,1.8727433628318584
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2015,2.1
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2015,2.45
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2015,3.63
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2015,3.35
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2015,-7.45
+,,Global,,Energy Consumer Price Inflation,,,,,2015,2.659029069767442
+,,Global,,Food Consumer Price Inflation,,,,,2015,4.806597590631868
+,,Global,,Headline Consumer Price Inflation,,,,,2015,4.234088669950739
+,,Global,,Official Core Consumer Price Inflation,,,,,2015,3.479026548672566
+,,Global,,Producer Price Inflation,,,,,2015,0.3489380530973451
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2016,2.08
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2016,2.44
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2016,3.78
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2016,2.73
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2016,-1.05
+,,Global,,Energy Consumer Price Inflation,,,,,2016,2.322441860465116
+,,Global,,Food Consumer Price Inflation,,,,,2016,5.141912373664836
+,,Global,,Headline Consumer Price Inflation,,,,,2016,6.9041871921182265
+,,Global,,Official Core Consumer Price Inflation,,,,,2016,5.895132743362832
+,,Global,,Producer Price Inflation,,,,,2016,3.503362831858407
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2017,3.8
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2017,2.2
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2017,3.98
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2017,1.79
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2017,6.69
+,,Global,,Energy Consumer Price Inflation,,,,,2017,4.310819767441861
+,,Global,,Food Consumer Price Inflation,,,,,2017,7.074481256554945
+,,Global,,Headline Consumer Price Inflation,,,,,2017,7.31128078817734
+,,Global,,Official Core Consumer Price Inflation,,,,,2017,2.860176991150442
+,,Global,,Producer Price Inflation,,,,,2017,13.422477876106194
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2018,0.97
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2018,1.99
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2018,1.63
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2018,0.55
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2018,-1.14
+,,Global,,Energy Consumer Price Inflation,,,,,2018,555.6549825581395
+,,Global,,Food Consumer Price Inflation,,,,,2018,214.2874175824176
+,,Global,,Headline Consumer Price Inflation,,,,,2018,326.4271921182266
+,,Global,,Official Core Consumer Price Inflation,,,,,2018,2.9132743362831857
+,,Global,,Producer Price Inflation,,,,,2018,1503.1853982300884
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2019,0.66
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2019,1.87
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2019,1.65
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2019,1.09
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2019,-1.35
+,,Global,,Energy Consumer Price Inflation,,,,,2019,106.35499418604653
+,,Global,,Food Consumer Price Inflation,,,,,2019,102.1258021978022
+,,Global,,Headline Consumer Price Inflation,,,,,2019,103.1041379310345
+,,Global,,Official Core Consumer Price Inflation,,,,,2019,2.6015044247787613
+,,Global,,Producer Price Inflation,,,,,2019,2.9397345132743364
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2020,-1.14
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2020,-1.73
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2020,1.27
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2020,0.95
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2020,-2.66
+,,Global,,Energy Consumer Price Inflation,,,,,2020,3.910232558139535
+,,Global,,Food Consumer Price Inflation,,,,,2020,22.137694378467035
+,,Global,,Headline Consumer Price Inflation,,,,,2020,102.60187192118228
+,,Global,,Official Core Consumer Price Inflation,,,,,2020,3.403716814159292
+,,Global,,Producer Price Inflation,,,,,2020,0.5669026548672567
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2021,2.48
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2021,1.57
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2021,1.77
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2021,0.44
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2021,9.46
+,,Global,,Energy Consumer Price Inflation,,,,,2021,16.004825581395348
+,,Global,,Food Consumer Price Inflation,,,,,2021,19.65994505494505
+,,Global,,Headline Consumer Price Inflation,,,,,2021,15.915073891625616
+,,Global,,Official Core Consumer Price Inflation,,,,,2021,5.983274336283186
+,,Global,,Producer Price Inflation,,,,,2021,11.392743362831858
+MYS,548.0,Malaysia,Inflation,Headline Consumer Price Inflation,Annual average inflation,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2022,3.38
+MYS,548.0,Malaysia,Inflation,Energy Consumer Price Inflation,"Housing, Water, Electricity, Gas & Other Fuel",my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2022,1.95
+MYS,548.0,Malaysia,Inflation,Food Consumer Price Inflation,Food and non-acoholic beverage,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2022,5.3
+MYS,548.0,Malaysia,Inflation,Official Core Consumer Price Inflation,All Items Excluding Food and Energy,my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2022,1.55
+MYS,548.0,Malaysia,Inflation,Producer Price Inflation,Producer Price Index (local production),my,https://raw.githubusercontent.com/namith1003/FIT3179/main/flags/my_64.png,Asia,2022,8.7
+,,Global,,Energy Consumer Price Inflation,,,,,2022,17.851162790697675
+,,Global,,Food Consumer Price Inflation,,,,,2022,15.340549450549451
+,,Global,,Headline Consumer Price Inflation,,,,,2022,13.71088669950739
+,,Global,,Official Core Consumer Price Inflation,,,,,2022,5.042566371681416
+,,Global,,Producer Price Inflation,,,,,2022,20.17221238938053
