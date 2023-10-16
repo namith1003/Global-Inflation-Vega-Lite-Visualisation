@@ -105,7 +105,7 @@
             }
             },
             "tooltip": [
-              {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+              {"field": "Country", "type": "nominal", "title": "Country"},
               {"field": "Inflation", "type": "quantitative", "title": "Inflation"}
             ]
           }
