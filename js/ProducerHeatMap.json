@@ -12,7 +12,7 @@
               "values": [],
               "gridOpacity":0
           }},
-    "y": {"field": "Continent", "type": "nominal", "title": null,"axis": {"orient":"right","labelExpr": "", "values": [], "tickOpacity":0, "labelPadding":25, "gridOpacity":0}},
+    "y": {"field": "Continent", "type": "nominal", "title": null,"axis": {"orient":"right","labelExpr": "", "tickOpacity":0, "labelPadding":25, "gridOpacity":0}},
     "fill": {
       "field": "Continent",
       "type": "nominal",
