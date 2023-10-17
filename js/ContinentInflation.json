@@ -1,8 +1,9 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
+  "height": 300,
+  "width": 575,
   "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivot_average.csv"},
   "mark": {"type": "line", "point": true},
-  "width": {"step": 200},
   "transform": [
     {"filter": {"field": "Year", "oneOf": [1970, 2022]}
     }
