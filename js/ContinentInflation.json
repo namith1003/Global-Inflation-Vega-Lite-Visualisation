@@ -33,11 +33,12 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "color": "dark-yellow"
+        "color": "dark-yellow",
+        "size": 15
       },
       "encoding": {
         "y": { "value": 5},
-        "x": { "value": 657},
+        "x": { "value": 685},
         "text": {"value": "South America has"}
       }
     },
@@ -45,11 +46,12 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "color": "dark-yellow"
+        "color": "dark-yellow",
+        "size": 15
       },
       "encoding": {
         "y": { "value": 18},
-        "x": { "value": 650},
+        "x": { "value": 675},
         "text": {"value": "suffered the most"}
       }
     },
@@ -58,11 +60,12 @@
         "type": "text",
         "align": "right",
         "color": "#79BAB2",
-        "style": "regular"
+        "style": "regular",
+        "size": 15
       },
       "encoding": {
         "y": { "value": 320},
-        "x": { "value": 640},
+        "x": { "value": 668},
         "text": {"value": "North America"}
       }
     },
@@ -71,11 +74,12 @@
         "type": "text",
         "align": "right",
         "color": "#79BAB2",
-        "style": "regular"
+        "style": "regular",
+        "size": 15
       },
       "encoding": {
         "y": { "value": 335},
-        "x": { "value": 655},
+        "x": { "value": 685},
         "text": {"value": "has good progress"}
       }
     }
