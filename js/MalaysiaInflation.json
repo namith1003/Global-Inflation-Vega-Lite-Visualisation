@@ -37,10 +37,7 @@
           "scale": {
             "range": ["#5B4E77", "#F79D84"]
           },
-          "legend": {
-            "title": "Country",
-            "orient": "bottom"
-          }
+          "legend": null
         }
       },
       "transform": [
@@ -55,11 +52,7 @@
         "x": {
           "field": "Year",
           "type": "ordinal",
-          "title": "Year",
-          "axis": {
-            "labelAngle": 45,
-            "gridOpacity": 0
-          }
+          "title": "Year"
         },
         "y": {
           "field": "Inflation",
