@@ -117,7 +117,14 @@
           <div class="pure-u-1-2">
             <div id="vis10" class="vis-container-right"></div>
           </div>
+
+          <div class="description description-right">
+              <h3 style="margin-bottom: 20px;">Categorical Country Inflation, 1970-2022</h3>
+              <div id="vis12" class="vis-container"></div>
+          </div>
         </div>
+      
+      
     </div>
     <!-- end pure grid group -->
 
@@ -169,6 +176,7 @@
     var specVis9 = "./js/EnergyHeatMap.json";
     var specVis10 = "./js/ProducerHeatMap.json";
     var specVis11 = "./js/MalaysiaInflation.json";
+    var specVis12 = "./js/ContinentInflation.json";
 
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
@@ -206,6 +214,10 @@
     }).catch(console.error);
 
     vegaEmbed('#vis11', specVis11, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis12', specVis12, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
