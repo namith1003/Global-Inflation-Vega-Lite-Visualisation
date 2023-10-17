@@ -1,51 +1,36 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "height": 300,
-  "width": 575,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
+  "height": 400,
+  "width":750,
   "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivot_average.csv"},
-  "title": {"text": "Average Energy Inflation, 1970-2022",
-  "orient":"top"},
-  "mark": "rect",
+  "mark": {"type": "line", "point": true},
+  "transform": [
+    {"filter": {"field": "Year", "oneOf": [1970, 2022]}
+    }
+  ],
   "encoding": {
-    "x": {"field": "Year", "type": "ordinal","title": "Year",
-          "axis": {
-              "values": [],
-              "gridOpacity":0
-          }},
-    "y": {"field": "Continent", "type": "nominal", "title": null,"axis": {"orient":"right", "tickOpacity":0, "labelPadding":25, "gridOpacity":0}},
-    "fill": {
-      "field": "Continent",
-      "type": "nominal",
-      "legend": null
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "scale": {"padding": 0.5}
     },
-    "opacity": {
-      "field": "Average Energy Inflation",
+    "y": {
+      "aggregate": "median",
+      "field": "Average Headline Inflation",
       "type": "quantitative",
-      "scale": {
-        "type": "threshold",
-        "domain": [0, 1, 5, 15, 20, 30, 50, 100, 1000],
-        "range": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
-      },
-      "legend": {
-        "title": "Inflation",
-        "orient": "bottom",
-        "direction": "horizontal",
-        "strokeColor": "black",
-        "fillColor": "white",
-        "padding": 3, 
-        "values": [0, 5, 15,20,30,50,100,1000]
-      }
+      "title": "Average Inflation"
     },
+    "color": {"field": "Continent", "type": "nominal",
+    "legend": null},
     "tooltip": [
-      {"field": "Year", "type": "ordinal", "title": "Year"},
-      {"field": "Continent", "type": "nominal", "title": "Continent"},
-      {"field": "Average Energy Inflation", "type": "quantitative", "title": "Average Energy Inflation"}
+      {"field": "Year", "title": "Year"},
+      {"field": "Average Headline Inflation", "title": "Average Inflation"}
     ]
   },
   "config": {
     "axis": {"tickBand": "extent"},
     "font": "almarai",
-    "background":"#FFEEB6",
+    "background": "#FFEEB6",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
