@@ -8,7 +8,7 @@
   "params": [
     {
       "name": "Year",
-      "value": 1992
+      "value": 2000
     },
     {
       "name": "Series_Name",
@@ -77,7 +77,7 @@
       "encoding": {
         "x": { "scale": null,"field": "Inflation", "type": "quantitative", "title": "Inflation value"},
         "opacity": {
-          "condition": {"test": "datum.Year == Year && datum.Series_Name == 'Headline Consumer Price Inflation' && datum.Country == 'Global'", "value": 1},
+          "condition": {"test": "datum.Year == Year && datum.Series_Name == Series_Name && datum.Country == 'Global'", "value": 1},
           "value": 0
         }
       }
