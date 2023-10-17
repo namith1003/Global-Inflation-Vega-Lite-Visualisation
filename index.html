@@ -74,6 +74,14 @@
           <p>
           <b>The chart on the</b> right displays the top 10 countries with the highest inflation rates for selected years and categories (food, energy, consumer, producer, or overall) from 1970 to 2022. Users can pinpoint countries facing significant inflation challenges in specific sectors using the year slider and category dropdown. This resource aids in understanding economic policy impacts and global inflation.
           </p>
+          <label for="inflation-select" ><b>Inflation Type:</b> </label><p></p>
+            <select id="inflation-select">
+              <option value="Headline Consumer Price Inflation" selected>Overall Inflation</option>
+              <option value="Food Consumer Price Inflation">Food Inflation</option>
+              <option value="Energy Consumer Price Inflation">Energy Inflation</option>
+              <option value="Official Core Consumer Price Inflation">Consumer Inflation</option>
+              <option value="Producer Price Inflation">Producer Inflation</option>
+            </select>
         </div>
       </div>
       <div class="pure-u-3-4">
@@ -82,17 +90,8 @@
           <div id="vis2" class="vis-container"></div>
           <div id="slider-container">
             <p><b>Year:</b></p>
-            <input type="range" id="year-slider2" min="1970" max="2022" step="1" value="2022" style="margin-right: 15px;">
+            <input type="range" id="year-slider2" min="1970" max="2022" step="1" value="2022">
             <span id="slider-value2">2022</span>
-
-            <label for="inflation-select" ><b>Inflation Type:</b> </label><p></p>
-            <select id="inflation-select">
-              <option value="Headline Consumer Price Inflation" selected>Overall Inflation</option>
-              <option value="Food Consumer Price Inflation">Food Inflation</option>
-              <option value="Energy Consumer Price Inflation">Energy Inflation</option>
-              <option value="Official Core Consumer Price Inflation">Consumer Inflation</option>
-              <option value="Producer Price Inflation">Producer Inflation</option>
-            </select>
           </div>
       </div>
     </div>
