@@ -1,129 +1,93 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 835,
-  "height": 250,
-  "data": {
-    "url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/malaysia_inflation.csv"
-  },
-  "params": [
-    {
-      "name": "Series_Name",
-      "value": "Headline Consumer Price Inflation"
-    }
-  ],
+  "height": 400,
+  "width": 750,
+  "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivot_average.csv"},
   "layer": [
     {
-      "mark": {
-        "type": "line",
-        "color": "orange",
-        "opacity": 0.7
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "ordinal",
-          "title": "Year"
-        },
-        "y": {
-          "field": "Inflation",
-          "type": "quantitative",
-          "title": "Inflation",
-          "scale": {"type": "linear"}
-        },
-        "color": {
-          "field": "Country",
-          "type": "nominal",
-          "title": "Country",
-          "scale": {
-            "range": ["#5B4E77", "#F79D84"]
-          },
-          "legend": null
-        }
-      },
+      "mark": {"type": "line", "point": true},
       "transform": [
-        {
-          "filter": "datum.Series_Name == Series_Name"
+        {"filter": {"field": "Year", "oneOf": [1970, 2022]}
         }
-      ]
-    },
-    {
-      "mark": "point",
+      ],
       "encoding": {
         "x": {
           "field": "Year",
           "type": "ordinal",
-          "title": "Year"
+          "scale": {"padding": 0.5}
         },
         "y": {
-          "field": "Inflation",
+          "aggregate": "median",
+          "field": "Average Headline Inflation",
           "type": "quantitative",
-          "title": "Inflation",
-          "axis": {
-            "grid": false,
-            "labelOverlap": true
-          },
-          "scale": {"type": "linear"}
+          "title": "Average Inflation"
         },
-        "color": {
-          "field": "Country",
-          "type": "nominal",
-          "title": "Country",
-          "scale": {
-            "range": ["#5B4E77", "#F79D84"]
-          },
-          "legend": null
-        },
-        "size": {
-          "value": 100
-        },
-        "opacity": {
-          "value": 1
-        },
+        "color": {"field": "Continent", "type": "nominal", "legend": null},
         "tooltip": [
-          {"field": "Series_Name", "title": "Series Name"},
-          {"field": "Country", "title": "Country"},
           {"field": "Year", "title": "Year"},
-          {"field": "Inflation", "title": "Inflation", "format": ",.2r"}
+          {"field": "Average Headline Inflation", "title": "Average Inflation"},{"field": "Continent", "title": "Continent"}
         ]
-      },
-      "transform": [
-        {
-          "filter": "datum.Series_Name == Series_Name"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "color": "#6C5E7D",
-        "style": "regular",
-        "size": 15
-      },
-      "encoding": {
-        "y": { "value": 10},
-        "x": { "value": 750},
-        "text": {"value": "Highest Global"}
       }
     },
     {
       "mark": {
         "type": "text",
         "align": "right",
-        "color": "#6C5E7D",
+        "color": "dark-yellow",
+        "size": 15
+      },
+      "encoding": {
+        "y": { "value": 5},
+        "x": { "value": 685},
+        "text": {"value": "South America has"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "dark-yellow",
+        "size": 15
+      },
+      "encoding": {
+        "y": { "value": 18},
+        "x": { "value": 675},
+        "text": {"value": "suffered the most"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#79BAB2",
         "style": "regular",
         "size": 15
       },
       "encoding": {
-        "y": { "value": 27},
-        "x": { "value": 750},
-        "text": {"value": "Inflation Reached"}
+        "y": { "value": 320},
+        "x": { "value": 668},
+        "text": {"value": "North America"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#79BAB2",
+        "style": "regular",
+        "size": 15
+      },
+      "encoding": {
+        "y": { "value": 335},
+        "x": { "value": 685},
+        "text": {"value": "has good progress"}
       }
     }
   ],
   "config": {
+    "axis": {"tickBand": "extent"},
     "font": "almarai",
-    "background":"#FFEEB6",
+    "background": "#FFEEB6",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
