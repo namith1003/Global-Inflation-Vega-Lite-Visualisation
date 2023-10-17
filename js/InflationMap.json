@@ -75,7 +75,7 @@
         {
           "data": {
             "graticule": {
-              "step": [30, 30]
+              "step": [29.99, 30]
             }
           },
           "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5}
