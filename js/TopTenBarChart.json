@@ -100,7 +100,8 @@
         "tooltip": [
           {"field": "Country", "type": "nominal"},
           {"field": "value", "type": "quantitative", "title": "Inflation Value"},
-          {"field": "Series_Name", "type": "nominal", "title": "Inflation Type"} 
+          {"field": "Series_Name", "type": "nominal", "title": "Inflation Type"},
+          {"field": "Continent", "type": "nominal", "title": "Continent"}
         ]
       }
     },
