@@ -106,7 +106,8 @@
             },
             "tooltip": [
               {"field": "Country", "type": "nominal", "title": "Country"},
-              {"field": "Inflation", "type": "quantitative", "title": "Inflation"}
+              {"field": "Inflation", "type": "quantitative", "title": "Inflation"},
+              {"field": "Year", "type": "ordinal", "title": "Year"}
             ]
           }
         }
