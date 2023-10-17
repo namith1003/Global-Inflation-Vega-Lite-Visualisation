@@ -46,7 +46,7 @@
     {
       "mark": {
         "type": "rule",
-        "size": 1,
+        "size": 3,
         "style": "dotted"
       },
       "encoding": {
