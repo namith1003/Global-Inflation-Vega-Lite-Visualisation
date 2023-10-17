@@ -8,7 +8,7 @@
   "params": [
     {
       "name": "Year",
-      "value": 2013
+      "value": 1992
     },
     {
       "name": "Series_Name",
@@ -69,6 +69,20 @@
       }
     },
     {
+      "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/malaysia_inflation.csv"},
+      "mark": {
+        "type": "rule",
+        "color": "purple"
+      },
+      "encoding": {
+        "x": { "scale": null,"field": "Inflation", "type": "quantitative", "title": "Inflation value"},
+        "opacity": {
+          "condition": {"test": "datum.Year == Year && datum.Series_Name == 'Headline Consumer Price Inflation' && datum.Country == 'Global'", "value": 1},
+          "value": 0
+        }
+      }
+    },
+    {
       "mark": {
         "type": "image",
         "width": 50, 
@@ -92,26 +106,11 @@
     },
     {
       "mark": {
-        "type": "rule",
-        "color": "red",
-        "size": 1,
-        "style": "dotted"
-      },
-      "encoding": {
-        "x": { "field": "value", "type": "quantitative", "title": "Inflation value"},
-        "opacity": {
-          "condition": {"test": "datum.value > 100", "value": 1},
-          "value": 0
-        }
-      }
-    },
-    {
-      "mark": {
         "type": "text",
         "align": "right",
         "baseline": "middle",
-        "dx": -5,
-        "color": "red"
+        "dy": -10,
+        "color": "black"
       },
       "encoding": {
         "y": { "field": "Country", "type": "nominal" },
@@ -125,12 +124,7 @@
   ],
   "config": {
     "font": "almarai",
-    "background":"#FFEEB6",
+    "background": "#FFEEB6",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
-
-
-
-
-
