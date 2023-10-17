@@ -104,23 +104,6 @@
           {"field": "Continent", "type": "nominal", "title": "Continent"}
         ]
       }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "middle",
-        "dy": -10,
-        "color": "black"
-      },
-      "encoding": {
-        "y": { "field": "Country", "type": "nominal" },
-        "text": {"value": "Inflation exceeds 100"},
-        "opacity": {
-          "condition": {"test": "datum.value > 100", "value": 1},
-          "value": 0
-        }
-      }
     }
   ],
   "config": {
