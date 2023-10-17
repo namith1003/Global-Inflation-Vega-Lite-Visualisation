@@ -31,12 +31,6 @@
     "font": "almarai",
     "background": "#FFEEB6",
     "style": {"cell": {"stroke": "transparent"}},
-    "legend": {
-      "orient": "bottom",
-      "labelLimit": 0,
-      "symbolStrokeWidth": 0,
-      "strokeColor": "black",
-      "fillColor": "white"
-    }
+    "legend": null
   }
 }
