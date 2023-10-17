@@ -1,32 +1,85 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",  
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 400,
-  "width":750,
+  "width": 750,
   "data": {"url": "https://raw.githubusercontent.com/namith1003/FIT3179/main/pivot_average.csv"},
-  "mark": {"type": "line", "point": true},
-  "transform": [
-    {"filter": {"field": "Year", "oneOf": [1970, 2022]}
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true},
+      "transform": [
+        {"filter": {"field": "Year", "oneOf": [1970, 2022]}
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "scale": {"padding": 0.5}
+        },
+        "y": {
+          "aggregate": "median",
+          "field": "Average Headline Inflation",
+          "type": "quantitative",
+          "title": "Average Inflation"
+        },
+        "color": {"field": "Continent", "type": "nominal", "legend": null},
+        "tooltip": [
+          {"field": "Year", "title": "Year"},
+          {"field": "Average Headline Inflation", "title": "Average Inflation"},{"field": "Continent", "title": "Continent"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "dark-yellow"
+      },
+      "encoding": {
+        "y": { "value": 5},
+        "x": { "value": 657},
+        "text": {"value": "South America has"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "dark-yellow"
+      },
+      "encoding": {
+        "y": { "value": 18},
+        "x": { "value": 650},
+        "text": {"value": "suffered the most"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#79BAB2",
+        "style": "regular"
+      },
+      "encoding": {
+        "y": { "value": 320},
+        "x": { "value": 640},
+        "text": {"value": "North America"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#79BAB2",
+        "style": "regular"
+      },
+      "encoding": {
+        "y": { "value": 335},
+        "x": { "value": 655},
+        "text": {"value": "has good progress"}
+      }
     }
   ],
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "ordinal",
-      "scale": {"padding": 0.5}
-    },
-    "y": {
-      "aggregate": "median",
-      "field": "Average Headline Inflation",
-      "type": "quantitative",
-      "title": "Average Inflation"
-    },
-    "color": {"field": "Continent", "type": "nominal",
-    "legend": null},
-    "tooltip": [
-      {"field": "Year", "title": "Year"},
-      {"field": "Average Headline Inflation", "title": "Average Inflation"}
-    ]
-  },
   "config": {
     "axis": {"tickBand": "extent"},
     "font": "almarai",
