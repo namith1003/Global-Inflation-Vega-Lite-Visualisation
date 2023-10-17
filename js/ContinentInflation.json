@@ -20,17 +20,17 @@
       "type": "quantitative",
       "title": "Average Inflation"
     },
-    "color": {"field": "Continent", "type": "nominal"},
+    "color": {"field": "Continent", "type": "nominal",
+    "legend": null},
     "tooltip": [
       {"field": "Year", "title": "Year"},
-      {"field": "Average Headline Inflation", "title": "Median Inflation"}
+      {"field": "Average Headline Inflation", "title": "Average Inflation"}
     ]
   },
   "config": {
     "axis": {"tickBand": "extent"},
     "font": "almarai",
     "background": "#FFEEB6",
-    "style": {"cell": {"stroke": "transparent"}},
-    "legend": null
+    "style": {"cell": {"stroke": "transparent"}}
   }
 }
