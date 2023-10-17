@@ -91,6 +91,34 @@
           "filter": "datum.Series_Name == Series_Name"
         }
       ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#6C5E7D",
+        "style": "regular",
+        "size": 15
+      },
+      "encoding": {
+        "y": { "value": 10},
+        "x": { "value": 750},
+        "text": {"value": "Highest Global"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "color": "#6C5E7D",
+        "style": "regular",
+        "size": 15
+      },
+      "encoding": {
+        "y": { "value": 27},
+        "x": { "value": 750},
+        "text": {"value": "Inflation Reached"}
+      }
     }
   ],
   "config": {
